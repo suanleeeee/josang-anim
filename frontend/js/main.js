@@ -117,12 +117,15 @@ function renderResult(data) {
 
   cardsRow.innerHTML = '';
   const teams = data.teams || [];
+  const topScore = teams.length > 0 ? teams[0].fan_index : 0;
   const podium = teams.length >= 3
     ? [teams[1], teams[0], teams[2]]
     : teams;
   podium.forEach((t, i) => {
     const card = buildTeamCard(t);
-    if (teams.length >= 3 && i === 1) card.classList.add('rank-1');
+    const isCenter = teams.length >= 3 && i === 1;
+    const isTiedTop = topScore >= 70 && t.fan_index === topScore;
+    if (isCenter || isTiedTop) card.classList.add('rank-1');
     cardsRow.appendChild(card);
   });
 
