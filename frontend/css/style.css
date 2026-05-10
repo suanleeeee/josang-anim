@@ -575,6 +575,126 @@ section {
   background: rgba(255, 255, 255, 0.50);
 }
 
+.btn-about {
+  height: 36px;
+  padding: 0 18px;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(122, 92, 46, 0.55);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(122, 92, 46, 0.28);
+}
+
+.btn-about:hover {
+  color: var(--text-muted);
+  text-decoration-color: rgba(122, 92, 46, 0.55);
+}
+
+/* ─── About 모달 ─────────────────────────────────────────────── */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(13, 26, 58, 0.60);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.25s ease both;
+}
+
+.about-overlay.hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.about-modal {
+  position: relative;
+  background: var(--white-box);
+  border-radius: 24px;
+  padding: 36px 28px 32px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 80dvh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+  animation: slideUp 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.about-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-close:hover {
+  background: rgba(0, 0, 0, 0.12);
+  color: var(--text-dark);
+}
+
+.about-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 8px;
+}
+
+.about-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.07);
+}
+
+.about-body {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+}
+
+.about-body p {
+  margin-bottom: 14px;
+}
+
+.about-body p:last-child {
+  margin-bottom: 0;
+}
+
 /* ─── Loading ────────────────────────────────────────────────── */
 .loading-overlay {
   position: fixed;

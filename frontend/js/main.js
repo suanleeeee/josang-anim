@@ -38,6 +38,9 @@ const fanTypeDesc       = document.getElementById('fanTypeDesc');
 const fanReasonBox      = document.getElementById('fanReasonBox');
 const fanReasonText     = document.getElementById('fanReasonText');
 const fanTipBox         = document.getElementById('fanTipBox');
+const btnAbout          = document.getElementById('btnAbout');
+const aboutOverlay      = document.getElementById('aboutOverlay');
+const aboutClose        = document.getElementById('aboutClose');
 
 // ─── 유효성 검사 ─────────────────────────────────────────────
 function validateInput() {
@@ -210,6 +213,16 @@ btnCopyLink.addEventListener('click', async () => {
   } catch {
     alert('링크를 복사해 주세요: ' + location.href);
   }
+});
+
+// ─── About 모달 ──────────────────────────────────────────────
+btnAbout.addEventListener('click', () => aboutOverlay.classList.remove('hidden'));
+aboutClose.addEventListener('click', () => aboutOverlay.classList.add('hidden'));
+aboutOverlay.addEventListener('click', e => {
+  if (e.target === aboutOverlay) aboutOverlay.classList.add('hidden');
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') aboutOverlay.classList.add('hidden');
 });
 
 // ─── 카카오 공유 ─────────────────────────────────────────────
