@@ -255,53 +255,47 @@ btnBackToAbout.addEventListener('click', () => {
   aboutPage1.classList.remove('hidden');
 });
 
-// ─── 이미지 저장 ─────────────────────────────────────────────
+// ─── 이미지 저장 (공유 카드 방식) ───────────────────────────
 const btnSaveImage = document.getElementById('btnSaveImage');
 btnSaveImage.addEventListener('click', async () => {
   btnSaveImage.disabled = true;
 
-  const shareArea   = document.querySelector('.share-area');
-  const resultEl    = document.getElementById('result');
-  const cardsRowEl  = document.getElementById('cardsRow');
+  // 공유 카드 데이터 채우기
+  const shareCardEl  = document.getElementById('shareCard');
+  const scLabel      = document.getElementById('scLabel');
+  const scTitle      = document.getElementById('scTitle');
+  const scFanBadges  = document.getElementById('scFanBadges');
+  const scFanDesc    = document.getElementById('scFanDesc');
+  const scReasonCard = document.getElementById('scReasonCard');
+  const scReasonText = document.getElementById('scReasonText');
 
-  // 버튼 영역 숨기기
-  shareArea.style.display = 'none';
+  const noCarryVisible = !noCarryBanner.classList.contains('hidden');
+  const geongVisible   = !geongseongpaBanner.classList.contains('hidden');
 
-  // 캡처 전: 반투명 크림 오버레이 제거 → 노란 SVG 배경이 보이도록
-  const prevBg  = resultEl.style.background;
-  const prevBdf = resultEl.style.backdropFilter;
-  resultEl.style.background       = 'transparent';
-  resultEl.style.backdropFilter   = 'none';
-  resultEl.style.webkitBackdropFilter = 'none';
+  if (noCarryVisible) {
+    scLabel.textContent = '자유로운 번호';
+    scTitle.innerHTML   = '이 번호를 단 선수라면<br><em>어떤 팀이든 좋아요</em>';
+  } else if (geongVisible) {
+    scLabel.textContent = '당신의 운명 구단';
+    scTitle.innerHTML   = '무한한 가능성을 품은 당신!';
+  } else {
+    scLabel.textContent = '당신의 운명 구단';
+    scTitle.innerHTML   = `<em>${resultTeamName.textContent}</em>의 팬이 될<br>가능성이 가장 높습니다`;
+  }
 
-  // 카드 애니메이션 고정 (opacity:1 확보)
-  const prevAnim   = cardsRowEl.style.animation;
-  const prevOpac   = cardsRowEl.style.opacity;
-  const prevTrans  = cardsRowEl.style.transform;
-  cardsRowEl.style.animation = 'none';
-  cardsRowEl.style.opacity   = '1';
-  cardsRowEl.style.transform = 'none';
+  scFanBadges.innerHTML    = fanTypesBadges.innerHTML;
+  scFanDesc.textContent    = fanTypeDesc.textContent;
+  scReasonText.textContent = fanReasonText.textContent;
+  scReasonCard.style.display = fanReasonBox.classList.contains('hidden') ? 'none' : '';
 
-  // 경고문 임시 추가
-  const notice = document.createElement('p');
-  notice.textContent = '실제 선수 추천·투자 등과 무관한 재미용 서비스입니다.';
-  notice.style.cssText = 'text-align:center;font-size:0.60rem;color:rgba(140,110,60,0.55);padding:10px 24px 28px;letter-spacing:0.04em;';
-  resultSection.appendChild(notice);
-
-  window.scrollTo(0, 0);
-  await new Promise(r => setTimeout(r, 300));
+  // 폰트 로드 대기
+  await new Promise(r => setTimeout(r, 200));
 
   try {
-    const canvas = await html2canvas(document.body, {
+    const canvas = await html2canvas(shareCardEl, {
       useCORS: true,
       allowTaint: true,
       scale: 2,
-      x: 0,
-      y: 0,
-      width: window.innerWidth,
-      height: window.innerHeight,
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
     });
     const link = document.createElement('a');
     link.download = `조상은아니고요_${resultTeamName.textContent || '결과'}.png`;
@@ -311,14 +305,6 @@ btnSaveImage.addEventListener('click', async () => {
     console.error(e);
     alert('이미지 저장에 실패했어요. 다시 시도해 주세요.');
   } finally {
-    resultEl.style.background          = prevBg;
-    resultEl.style.backdropFilter      = prevBdf;
-    resultEl.style.webkitBackdropFilter = '';
-    cardsRowEl.style.animation = prevAnim;
-    cardsRowEl.style.opacity   = prevOpac;
-    cardsRowEl.style.transform = prevTrans;
-    shareArea.style.display = '';
-    resultSection.removeChild(notice);
     btnSaveImage.disabled = false;
   }
 });
