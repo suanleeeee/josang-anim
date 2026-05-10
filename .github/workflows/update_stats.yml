@@ -2,7 +2,7 @@ name: 스탯 갱신 (매일)
 
 on:
   schedule:
-    - cron: "0 19 * * *"  # 매일 KST 04:00 (UTC 19:00)
+    - cron: "0 18 * * *"  # 매일 KST 03:00 (UTC 18:00)
   workflow_dispatch:
 
 jobs:
