@@ -1016,12 +1016,3 @@ section {
   letter-spacing: 0.03em;
 }
 
-.sc-footer-bar {
-  background: #1A1A2E;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 0.70rem;
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
-  text-align: center;
-  padding: 10px 0;
-  letter-spacing: 0.10em;
-}
