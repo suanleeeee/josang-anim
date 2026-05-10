@@ -236,21 +236,17 @@ def build_recommendation(players: list) -> dict:
 
     # ── 상위 3팀 빌드 ───────────────────────────────────────────
     teams = []
-    for rank, (team, (score, top_player)) in enumerate(sorted_teams[:3], 1):
+    for team, (score, top_player) in sorted_teams[:3]:
         fan_index = round(score)
-        vibe = TEAM_VIBES.get(team, "")
-        prefix = f"{vibe} " if vibe else ""
         if fan_index >= 80:
-            fan_index_desc = f"{prefix}이 번호와의 인연은 거의 운명 수준입니다."
+            fan_index_desc = "이 번호와의 인연은 거의 운명 수준입니다."
         elif fan_index >= 60:
-            fan_index_desc = f"{prefix}이 번호 선수가 활약 중입니다."
+            fan_index_desc = "이 번호 선수가 활약 중입니다."
         else:
-            fan_index_desc = f"{prefix}강한 인연은 아니지만 문은 열려있습니다."
+            fan_index_desc = "강한 인연은 아니지만 문은 열려있습니다."
 
         teams.append({
-            "rank":           rank,
             "team":           team,
-            "team_desc":      TEAM_VIBES.get(team, ""),
             "fan_index":      fan_index,
             "fan_index_desc": fan_index_desc,
             "reason":         _build_team_reason(top_player, team),

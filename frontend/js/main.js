@@ -64,12 +64,7 @@ function setLoading(state) {
 // ─── 팀 카드 생성 ────────────────────────────────────────────
 function buildTeamCard(t) {
   const card = document.createElement('div');
-  card.className = `team-card rank-${t.rank}`;
-
-  // 순위 배지
-  const badge = document.createElement('div');
-  badge.className = 'card-rank-badge';
-  badge.textContent = `${t.rank}위`;
+  card.className = 'team-card';
 
   // 구단 엠블럼
   const emblem = document.createElement('img');
@@ -93,10 +88,9 @@ function buildTeamCard(t) {
   scoreLabel.textContent = 'pt';
   scoreWrap.append(scoreNum, scoreLabel);
 
-  card.append(badge, emblem, name, scoreWrap);
+  card.append(emblem, name, scoreWrap);
 
-  // 1위 카드에만 팬지수 설명 추가
-  if (t.rank === 1 && t.fan_index_desc) {
+  if (t.fan_index_desc) {
     const desc = document.createElement('p');
     desc.className = 'card-fan-index-desc';
     desc.textContent = t.fan_index_desc;
@@ -118,15 +112,8 @@ function renderResult(data) {
   const topTeam = data.teams && data.teams.length > 0 ? data.teams[0].team : '알 수 없음';
   resultTeamName.textContent = topTeam;
 
-  // 3카드 배치: 2위 | 1위 | 3위
   cardsRow.innerHTML = '';
-  const rank1 = (data.teams || []).find(t => t.rank === 1);
-  const rank2 = (data.teams || []).find(t => t.rank === 2);
-  const rank3 = (data.teams || []).find(t => t.rank === 3);
-
-  if (rank2) cardsRow.appendChild(buildTeamCard(rank2));
-  if (rank1) cardsRow.appendChild(buildTeamCard(rank1));
-  if (rank3) cardsRow.appendChild(buildTeamCard(rank3));
+  (data.teams || []).forEach(t => cardsRow.appendChild(buildTeamCard(t)));
 
   // 팬 타입 배지 + 확률
   fanTypesBadges.innerHTML = '';
