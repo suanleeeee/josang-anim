@@ -84,8 +84,8 @@ def _score_player(p: dict) -> float:
     """승리기여도 중심 급조팬지수 (0~100).
 
     1순위: WAR (승리기여도 직접 지표)
-    2순위: OPS/ERA (carry 선수, WAR 없을 때 간접 추정)
-    3순위: 비carry 1군 선수 = 15점 고정
+    2순위: OPS/ERA (스탯 데이터 있을 때)
+    3순위: 스탯 없는 1군 선수 = 26점 기본
     최근 폼 보정: ±10점
     """
     if p["war"] is not None:
@@ -97,11 +97,9 @@ def _score_player(p: dict) -> float:
             elif war >= 0.5: base = 42
             else:            base = 28
         except ValueError:
-            base = _ops_era_base(p) if p["is_carry"] else 15
-    elif p["is_carry"]:
-        base = _ops_era_base(p)
+            base = _ops_era_base(p)
     else:
-        return 15.0
+        base = _ops_era_base(p)
 
     return min(100.0, base + _recent_form_bonus(p))
 
