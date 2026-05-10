@@ -1,0 +1,29 @@
+name: 스탯 갱신 (매일)
+
+on:
+  schedule:
+    - cron: "0 19 * * *"  # 매일 KST 04:00 (UTC 19:00)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests beautifulsoup4 lxml
+
+      - name: 스탯 수집
+        run: python data/collect_stats.py
+
+      - name: 커밋 및 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stats.json
+          git diff --cached --quiet || git commit -m "data: 스탯 갱신 $(date +'%Y-%m-%d')"
+          git push

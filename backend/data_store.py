@@ -1,45 +1,42 @@
 """
-data/YEAR.json 에서 로스터+스탯+WAR 데이터를 읽어 제공합니다.
-라이브 스크래핑 없이 사전 수집된 데이터만 사용합니다.
+data/roster.json + data/stats.json 에서 데이터를 읽어 제공합니다.
+- roster.json: 주 1회 갱신 (팀/등번호/선수)
+- stats.json:  매일 갱신 (OPS/ERA/WAR)
 """
 import json
 import logging
-from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-KST = timezone(timedelta(hours=9))
 _DATA_DIR = Path(__file__).parent.parent / "data"
 
 
-def _load() -> dict:
-    year = datetime.now(KST).year
-    path = _DATA_DIR / f"{year}.json"
+def _load_json(filename: str) -> dict:
+    path = _DATA_DIR / filename
     if not path.exists():
-        # 전년도 fallback
-        path = _DATA_DIR / f"{year - 1}.json"
-    if not path.exists():
-        logger.error("데이터 파일 없음: %s", _DATA_DIR)
+        logger.error("데이터 파일 없음: %s", path)
         return {}
     data = json.loads(path.read_text(encoding="utf-8"))
-    logger.info("데이터 로드: %s (갱신: %s)", path.name, data.get("updated_at", "?"))
+    logger.info("%s 로드 완료 (갱신: %s)", filename, data.get("updated_at", "?"))
     return data
 
 
-# 앱 시작 시 1회 로드
-_db: dict = _load()
+_roster_db: dict = _load_json("roster.json")
+_stats_db: dict  = _load_json("stats.json")
 
 
-def get_updated_at() -> str:
-    return _db.get("updated_at", "unknown")
+def get_updated_at() -> dict:
+    return {
+        "roster": _roster_db.get("updated_at", "unknown"),
+        "stats":  _stats_db.get("updated_at", "unknown"),
+    }
 
 
 def find_players_by_jersey(jersey: int) -> list:
-    """등번호로 해당 선수 목록 반환."""
-    rosters: dict = _db.get("rosters", {})
-    stats_map: dict = _db.get("stats", {})
-    war_map: dict = _db.get("war", {})
+    rosters   = _roster_db.get("rosters", {})
+    stats_map = _stats_db.get("stats", {})
+    war_map   = _stats_db.get("war", {})
 
     jersey_str = str(jersey)
     result = []
