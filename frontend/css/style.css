@@ -604,6 +604,27 @@ section {
   text-decoration-color: rgba(122, 92, 46, 0.55);
 }
 
+.btn-about-footer {
+  display: block;
+  margin: 10px auto 0;
+  font-family: inherit;
+  font-size: 0.65rem;
+  color: rgba(180, 160, 120, 0.45);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(180, 160, 120, 0.20);
+  transition: var(--transition);
+}
+
+.btn-about-footer:hover {
+  color: rgba(180, 160, 120, 0.75);
+  text-decoration-color: rgba(180, 160, 120, 0.45);
+}
+
 /* ─── About 모달 ─────────────────────────────────────────────── */
 .about-overlay {
   position: fixed;
