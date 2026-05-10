@@ -194,11 +194,16 @@ def _classify_fan_types(players: list, top_player: dict = None) -> tuple:
     return types, probs
 
 
+_BASE_TYPES = {"타자콤", "투수콤"}
+
 def _fan_type_desc(fan_types: list, jersey: int) -> str:
     if not fan_types:
         return "이 번호를 달고 있는 선수들의 특성을 분석했습니다."
     if len(fan_types) == 1:
         return _TYPE_DESCS.get(fan_types[0], "이 번호 선수들의 공통 특성입니다.")
+    specific = [t for t in fan_types if t not in _BASE_TYPES]
+    if len(specific) == 1:
+        return _TYPE_DESCS.get(specific[0], "이 번호 선수들의 공통 특성입니다.")
     return "활약하는 선수들이 다양한 길로 향하네요!"
 
 
