@@ -270,13 +270,17 @@ btnSaveImage.addEventListener('click', async () => {
   notice.style.cssText = 'text-align:center;font-size:0.60rem;color:rgba(180,160,120,0.5);padding:10px 24px 28px;letter-spacing:0.04em;';
   resultSection.appendChild(notice);
 
+  // 맨 위로 스크롤 후 안정화 대기
+  window.scrollTo(0, 0);
+  await new Promise(r => setTimeout(r, 200));
+
   try {
     const canvas = await html2canvas(document.body, {
       useCORS: true,
       allowTaint: true,
       scale: 2,
       x: 0,
-      y: window.scrollY,
+      y: 0,
       width: window.innerWidth,
       height: window.innerHeight,
       windowWidth: window.innerWidth,
