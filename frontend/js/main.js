@@ -258,20 +258,13 @@ btnBackToAbout.addEventListener('click', () => {
 // ─── 이미지 저장 ─────────────────────────────────────────────
 const btnSaveImage = document.getElementById('btnSaveImage');
 btnSaveImage.addEventListener('click', async () => {
-  const target = document.getElementById('result');
-  const orig = btnSaveImage.textContent;
-  btnSaveImage.textContent = '저장 중...';
-  btnSaveImage.disabled = true;
+  const shareArea = document.querySelector('.share-area');
+  shareArea.style.visibility = 'hidden';
   try {
-    const canvas = await html2canvas(document.body, {
+    const canvas = await html2canvas(document.getElementById('result'), {
       useCORS: true,
       scale: 2,
-      x: 0,
-      y: window.scrollY,
-      width: window.innerWidth,
-      height: window.innerHeight,
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
+      backgroundColor: null,
     });
     const link = document.createElement('a');
     link.download = `조상은아니고요_${resultTeamName.textContent || '결과'}.png`;
@@ -280,7 +273,6 @@ btnSaveImage.addEventListener('click', async () => {
   } catch {
     alert('이미지 저장에 실패했어요. 다시 시도해 주세요.');
   } finally {
-    btnSaveImage.textContent = orig;
-    btnSaveImage.disabled = false;
+    shareArea.style.visibility = '';
   }
 });

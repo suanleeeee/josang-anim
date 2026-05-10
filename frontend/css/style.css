@@ -518,6 +518,13 @@ section {
   letter-spacing: 0.04em;
 }
 
+.share-notice {
+  font-size: 0.62rem !important;
+  color: rgba(122, 92, 46, 0.45) !important;
+  letter-spacing: 0.03em !important;
+  margin-top: -4px;
+}
+
 .share-buttons {
   display: flex;
   gap: 10px;
