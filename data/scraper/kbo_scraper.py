@@ -179,19 +179,43 @@ def fetch_all_rosters() -> dict:
     rosters = {}
 
     for idx, table in enumerate(team_tables):
-        if idx >= len(REGISTER_ALL_TEAM_ORDER):
-            break
-
-        team_code = REGISTER_ALL_TEAM_ORDER[idx]
-        team_name = REGISTER_TEAM_NAMES[team_code]
-        rosters[team_name] = []
-
         rows = table.find_all("tr")
         if not rows:
             continue
 
         header_cells = rows[0].find_all(["th", "td"])
         headers = [c.get_text(strip=True) for c in header_cells]
+
+        # 첫 번째 데이터 셀에서 팀 추출 (예: "KT40명", "삼성39명", "롯데39명")
+        _ABBR_MAP = {
+            "KT":  "KT 위즈",
+            "LG":  "LG 트윈스",
+            "삼성": "삼성 라이온즈",
+            "SSG": "SSG 랜더스",
+            "KIA": "기아 타이거즈",
+            "기아": "기아 타이거즈",
+            "NC":  "NC 다이노스",
+            "두산": "두산 베어스",
+            "롯데": "롯데 자이언츠",
+            "한화": "한화 이글스",
+            "키움": "키움 히어로즈",
+        }
+        team_name = None
+        if len(rows) > 1:
+            first_cells = rows[1].find_all(["td", "th"])
+            first_text = first_cells[0].get_text(strip=True) if first_cells else ""
+            for abbr, name in _ABBR_MAP.items():
+                if first_text.startswith(abbr):
+                    team_name = name
+                    break
+
+        # 팀명 추출 실패 시 순서 기반 fallback
+        if team_name is None:
+            if idx >= len(REGISTER_ALL_TEAM_ORDER):
+                break
+            team_name = REGISTER_TEAM_NAMES[REGISTER_ALL_TEAM_ORDER[idx]]
+
+        rosters[team_name] = []
 
         for row in rows[1:]:
             cells = row.find_all(["td", "th"])
