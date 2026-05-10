@@ -278,9 +278,9 @@ section {
 /* ─── RESULT SECTION ────────────────────────────────────────── */
 #result {
   min-height: 100dvh;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 28px;
-  padding-top: 60px;
+  padding-top: 28vh;
   padding-bottom: 80px;
   background: rgba(255, 252, 240, 0.55);
   backdrop-filter: blur(3px);
@@ -289,7 +289,6 @@ section {
 
 .result-header {
   text-align: center;
-  margin-top: 48px;
 }
 
 .result-header .result-label {
