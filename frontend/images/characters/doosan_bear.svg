@@ -1,0 +1,78 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rh-ds" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.12"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 다리 -->
+  <ellipse cx="80" cy="186" rx="19" ry="13" fill="#6B3F1C"/>
+  <ellipse cx="120" cy="186" rx="19" ry="13" fill="#6B3F1C"/>
+  <ellipse cx="80" cy="186" rx="19" ry="13" fill="url(#rh-ds)" opacity="0.6"/>
+  <ellipse cx="120" cy="186" rx="19" ry="13" fill="url(#rh-ds)" opacity="0.6"/>
+  <!-- 발바닥 -->
+  <ellipse cx="80" cy="190" rx="13" ry="8" fill="#9B6840" opacity="0.7"/>
+  <ellipse cx="120" cy="190" rx="13" ry="8" fill="#9B6840" opacity="0.7"/>
+
+  <!-- 팔 -->
+  <ellipse cx="56" cy="150" rx="19" ry="14" fill="#6B3F1C" transform="rotate(-18,56,150)"/>
+  <ellipse cx="56" cy="150" rx="19" ry="14" fill="url(#rh-ds)" opacity="0.5" transform="rotate(-18,56,150)"/>
+  <ellipse cx="144" cy="150" rx="19" ry="14" fill="#6B3F1C" transform="rotate(18,144,150)"/>
+  <ellipse cx="144" cy="150" rx="19" ry="14" fill="url(#rh-ds)" opacity="0.5" transform="rotate(18,144,150)"/>
+  <!-- 발바닥 -->
+  <ellipse cx="44" cy="158" rx="10" ry="8" fill="#9B6840" opacity="0.6"/>
+  <ellipse cx="156" cy="158" rx="10" ry="8" fill="#9B6840" opacity="0.6"/>
+
+  <!-- 몸통 -->
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="#7B4F22"/>
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="url(#rh-ds)"/>
+  <!-- 배 밝은 색 -->
+  <ellipse cx="100" cy="158" rx="28" ry="25" fill="#C8A070" opacity="0.55"/>
+
+  <!-- 두산 유니폼 -->
+  <path d="M80 138 Q100 132 120 138 L118 168 Q100 172 82 168Z" fill="#131230" opacity="0.90"/>
+  <path d="M90 132 L88 168 Q100 171 112 168 L110 132 Q105 129 100 128 Q95 129 90 132Z" fill="white" opacity="0.85"/>
+  <line x1="91" y1="130" x2="88" y2="168" stroke="#BE1928" stroke-width="3"/>
+  <line x1="109" y1="130" x2="112" y2="168" stroke="#BE1928" stroke-width="3"/>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="10" fill="#131230">BEARS</text>
+
+  <!-- 머리 -->
+  <circle cx="100" cy="90" r="52" fill="#7B4F22"/>
+  <circle cx="100" cy="90" r="52" fill="url(#rh-ds)"/>
+
+  <!-- 귀 -->
+  <circle cx="62" cy="52" r="20" fill="#7B4F22"/>
+  <circle cx="138" cy="52" r="20" fill="#7B4F22"/>
+  <circle cx="62" cy="52" r="20" fill="url(#rh-ds)" opacity="0.6"/>
+  <circle cx="138" cy="52" r="20" fill="url(#rh-ds)" opacity="0.6"/>
+  <circle cx="62" cy="52" r="11" fill="#9B6840" opacity="0.6"/>
+  <circle cx="138" cy="52" r="11" fill="#9B6840" opacity="0.6"/>
+
+  <!-- 주둥이 -->
+  <ellipse cx="100" cy="110" rx="24" ry="17" fill="#C8A070"/>
+  <ellipse cx="100" cy="110" rx="24" ry="17" fill="url(#rh-ds)" opacity="0.3"/>
+
+  <!-- 눈 -->
+  <circle cx="82" cy="86" r="12" fill="#1A1A1A"/>
+  <circle cx="118" cy="86" r="12" fill="#1A1A1A"/>
+  <circle cx="78.5" cy="82.5" r="4.5" fill="white" opacity="0.85"/>
+  <circle cx="114.5" cy="82.5" r="4.5" fill="white" opacity="0.85"/>
+
+  <!-- 코 -->
+  <ellipse cx="100" cy="106" rx="7" ry="5" fill="#3A1A08"/>
+
+  <!-- 입 -->
+  <path d="M91 114 Q100 121 109 114" stroke="#3A1A08" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="100" y1="111" x2="100" y2="115" stroke="#3A1A08" stroke-width="1.8"/>
+
+  <!-- 볼 -->
+  <circle cx="73" cy="104" r="9" fill="#FF9966" opacity="0.4"/>
+  <circle cx="127" cy="104" r="9" fill="#FF9966" opacity="0.4"/>
+
+  <!-- 두산 모자 -->
+  <path d="M62 80 Q100 60 138 80 L136 72 Q100 52 64 72Z" fill="#131230"/>
+  <rect x="60" y="71" width="80" height="10" rx="5" fill="#1A1A42"/>
+  <path d="M54 81 Q100 72 146 81 Q144 89 100 86 Q56 89 54 81Z" fill="#0A0A22"/>
+  <text x="100" y="79" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="10" fill="#BE1928">B</text>
+</svg>

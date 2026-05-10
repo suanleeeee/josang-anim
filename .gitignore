@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# 캐시 / 진단 파일
+data/cache/
+data/scraper/jersey_*.json
+data/scraper/diag_*.py
+
+# 환경 변수
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Render 빌드 아티팩트
+*.log

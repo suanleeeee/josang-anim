@@ -1,0 +1,94 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rh-kt" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.12"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 로브 자락 -->
+  <path d="M60 145 Q50 178 46 195 L154 195 Q150 178 140 145 Q120 136 100 134 Q80 136 60 145Z" fill="#CC0000"/>
+  <path d="M60 145 Q50 178 46 195 L154 195 Q150 178 140 145 Q120 136 100 134 Q80 136 60 145Z" fill="url(#rh-kt)" opacity="0.4"/>
+  <!-- 로브 별 장식 -->
+  <text x="68" y="170" font-size="18" fill="#FFD700" text-anchor="middle" opacity="0.9">★</text>
+  <text x="132" y="170" font-size="18" fill="#FFD700" text-anchor="middle" opacity="0.9">★</text>
+  <text x="100" y="186" font-size="14" fill="#FFD700" text-anchor="middle" opacity="0.9">✦</text>
+
+  <!-- 팔 왼쪽 -->
+  <ellipse cx="52" cy="148" rx="22" ry="15" fill="#CC0000" transform="rotate(-20,52,148)"/>
+  <ellipse cx="52" cy="148" rx="22" ry="15" fill="url(#rh-kt)" opacity="0.5" transform="rotate(-20,52,148)"/>
+  <!-- 손 왼쪽 -->
+  <circle cx="38" cy="156" r="13" fill="#F5C898"/>
+  <circle cx="38" cy="156" r="13" fill="url(#rh-kt)" opacity="0.4"/>
+
+  <!-- 팔 오른쪽 (지팡이) -->
+  <ellipse cx="148" cy="148" rx="22" ry="15" fill="#CC0000" transform="rotate(20,148,148)"/>
+  <ellipse cx="148" cy="148" rx="22" ry="15" fill="url(#rh-kt)" opacity="0.5" transform="rotate(20,148,148)"/>
+  <!-- 손 오른쪽 -->
+  <circle cx="162" cy="156" r="13" fill="#F5C898"/>
+  <circle cx="162" cy="156" r="13" fill="url(#rh-kt)" opacity="0.4"/>
+
+  <!-- 마법 지팡이 -->
+  <line x1="168" y1="158" x2="178" y2="100" stroke="#5A3A0A" stroke-width="5" stroke-linecap="round"/>
+  <!-- 별 -->
+  <polygon points="178,78 181,90 193,90 183,97 187,109 178,102 169,109 173,97 163,90 175,90" fill="#FFD700"/>
+  <!-- 별빛 -->
+  <circle cx="178" cy="78" r="8" fill="#FFD700" opacity="0.3"/>
+  <!-- 마법 파티클 -->
+  <circle cx="165" cy="88" r="3.5" fill="#FFD700" opacity="0.7"/>
+  <circle cx="172" cy="70" r="2.5" fill="#FF8800" opacity="0.6"/>
+  <circle cx="188" cy="82" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="182" cy="62" r="2" fill="white" opacity="0.7"/>
+
+  <!-- 몸통 -->
+  <ellipse cx="100" cy="148" rx="42" ry="32" fill="#CC0000"/>
+  <ellipse cx="100" cy="148" rx="42" ry="32" fill="url(#rh-kt)"/>
+  <!-- KT 마크 -->
+  <text x="100" y="153" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="14" fill="white" opacity="0.9">KT</text>
+
+  <!-- 목 -->
+  <ellipse cx="100" cy="122" rx="20" ry="14" fill="#F5C898"/>
+  <ellipse cx="100" cy="122" rx="20" ry="14" fill="url(#rh-kt)" opacity="0.3"/>
+
+  <!-- 머리 -->
+  <circle cx="100" cy="96" r="42" fill="#F5C898"/>
+  <circle cx="100" cy="96" r="42" fill="url(#rh-kt)"/>
+
+  <!-- 마법사 뾰족 모자 -->
+  <path d="M100 20 L68 88 L132 88 Z" fill="#1A1A1A"/>
+  <path d="M100 20 L72 84 L128 84 Z" fill="#CC0000"/>
+  <!-- 모자 챙 -->
+  <ellipse cx="100" cy="88" rx="40" ry="11" fill="#1A1A1A"/>
+  <ellipse cx="100" cy="86" rx="38" ry="9" fill="#CC0000"/>
+  <!-- 모자 별 -->
+  <text x="100" y="62" font-size="16" fill="#FFD700" text-anchor="middle">★</text>
+  <text x="86" y="75" font-size="10" fill="#FFD700" text-anchor="middle">✦</text>
+  <text x="114" y="75" font-size="10" fill="#FFD700" text-anchor="middle">✦</text>
+  <!-- 모자 띠 -->
+  <ellipse cx="100" cy="86" rx="38" ry="6" fill="#1A1A1A" opacity="0.6"/>
+
+  <!-- 눈 -->
+  <circle cx="86" cy="100" r="11" fill="#1A1A1A"/>
+  <circle cx="114" cy="100" r="11" fill="#1A1A1A"/>
+  <circle cx="82.5" cy="96.5" r="4" fill="white" opacity="0.85"/>
+  <circle cx="110.5" cy="96.5" r="4" fill="white" opacity="0.85"/>
+
+  <!-- 눈썹 (치켜올린) -->
+  <path d="M78 91 Q86 86 94 90" stroke="#8B5030" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M106 90 Q114 86 122 91" stroke="#8B5030" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- 코 -->
+  <circle cx="100" cy="110" r="4.5" fill="#E8A070"/>
+
+  <!-- 입 (씩 웃음) -->
+  <path d="M88 116 Q100 124 112 116" stroke="#C07050" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- 볼 -->
+  <circle cx="76" cy="108" r="9" fill="#FF9966" opacity="0.4"/>
+  <circle cx="124" cy="108" r="9" fill="#FF9966" opacity="0.4"/>
+
+  <!-- 수염 -->
+  <path d="M88 118 Q86 130 84 138" stroke="#E0D8C8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M100 120 Q100 134 100 142" stroke="#E0D8C8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M112 118 Q114 130 116 138" stroke="#E0D8C8" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

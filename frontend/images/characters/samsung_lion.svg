@@ -1,0 +1,78 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rh-lion" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.12"/>
+    </radialGradient>
+    <radialGradient id="rb-lion" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.10"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 다리 -->
+  <ellipse cx="80" cy="184" rx="18" ry="13" fill="#E8A820"/>
+  <ellipse cx="120" cy="184" rx="18" ry="13" fill="#E8A820"/>
+  <ellipse cx="80" cy="184" rx="18" ry="13" fill="url(#rb-lion)"/>
+  <ellipse cx="120" cy="184" rx="18" ry="13" fill="url(#rb-lion)"/>
+
+  <!-- 팔 -->
+  <ellipse cx="56" cy="148" rx="17" ry="13" fill="#E8A820" transform="rotate(-20,56,148)"/>
+  <ellipse cx="144" cy="148" rx="17" ry="13" fill="#E8A820" transform="rotate(20,144,148)"/>
+  <ellipse cx="56" cy="148" rx="17" ry="13" fill="url(#rb-lion)" transform="rotate(-20,56,148)"/>
+  <ellipse cx="144" cy="148" rx="17" ry="13" fill="url(#rb-lion)" transform="rotate(20,144,148)"/>
+
+  <!-- 갈기 (뒤) -->
+  <circle cx="100" cy="90" r="60" fill="#C47A00"/>
+  <circle cx="100" cy="90" r="60" fill="url(#rh-lion)" opacity="0.5"/>
+
+  <!-- 몸통 -->
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="#E8A820"/>
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="url(#rb-lion)"/>
+
+  <!-- 배 -->
+  <ellipse cx="100" cy="158" rx="26" ry="24" fill="#F5CA80" opacity="0.7"/>
+
+  <!-- 삼성 블루 유니폼 -->
+  <path d="M80 138 Q100 132 120 138 L118 168 Q100 172 82 168Z" fill="#074CA1" opacity="0.88"/>
+  <text x="100" y="158" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="10" fill="white">S</text>
+
+  <!-- 머리 -->
+  <circle cx="100" cy="90" r="52" fill="#F0B830"/>
+  <circle cx="100" cy="90" r="52" fill="url(#rh-lion)"/>
+
+  <!-- 귀 -->
+  <circle cx="62" cy="52" r="18" fill="#E8A820"/>
+  <circle cx="138" cy="52" r="18" fill="#E8A820"/>
+  <circle cx="62" cy="52" r="18" fill="url(#rh-lion)" opacity="0.6"/>
+  <circle cx="138" cy="52" r="18" fill="url(#rh-lion)" opacity="0.6"/>
+  <circle cx="62" cy="52" r="10" fill="#E09060" opacity="0.7"/>
+  <circle cx="138" cy="52" r="10" fill="#E09060" opacity="0.7"/>
+
+  <!-- 주둥이 -->
+  <ellipse cx="100" cy="108" rx="22" ry="16" fill="#F5CA80"/>
+  <ellipse cx="100" cy="108" rx="22" ry="16" fill="url(#rb-lion)" opacity="0.4"/>
+
+  <!-- 눈 (구슬 눈) -->
+  <circle cx="83" cy="86" r="11" fill="#1A1A1A"/>
+  <circle cx="117" cy="86" r="11" fill="#1A1A1A"/>
+  <circle cx="79" cy="82" r="4" fill="white" opacity="0.85"/>
+  <circle cx="113" cy="82" r="4" fill="white" opacity="0.85"/>
+
+  <!-- 코 -->
+  <ellipse cx="100" cy="104" rx="6" ry="4.5" fill="#8B4513"/>
+
+  <!-- 입 -->
+  <path d="M92 112 Q100 118 108 112" stroke="#8B4513" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="100" y1="108" x2="100" y2="112" stroke="#8B4513" stroke-width="1.8"/>
+
+  <!-- 볼 홍조 -->
+  <circle cx="74" cy="102" r="9" fill="#FF9966" opacity="0.4"/>
+  <circle cx="126" cy="102" r="9" fill="#FF9966" opacity="0.4"/>
+
+  <!-- 삼성 블루 모자 -->
+  <path d="M62 78 Q100 58 138 78 L136 70 Q100 50 64 70Z" fill="#074CA1"/>
+  <rect x="60" y="69" width="80" height="10" rx="5" fill="#0A52B0"/>
+  <path d="M54 79 Q100 70 146 79 Q144 87 100 84 Q56 87 54 79Z" fill="#053A8A"/>
+  <text x="100" y="77" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="10" fill="#FFD700">S</text>
+</svg>

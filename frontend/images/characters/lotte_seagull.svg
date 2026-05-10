@@ -1,0 +1,59 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rh-lot" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.10"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 날개 왼쪽 -->
+  <ellipse cx="52" cy="148" rx="28" ry="18" fill="#E8EEF4" transform="rotate(-30,52,148)"/>
+  <ellipse cx="52" cy="148" rx="28" ry="18" fill="url(#rh-lot)" opacity="0.5" transform="rotate(-30,52,148)"/>
+  <!-- 날개 오른쪽 -->
+  <ellipse cx="148" cy="148" rx="28" ry="18" fill="#E8EEF4" transform="rotate(30,148,148)"/>
+  <ellipse cx="148" cy="148" rx="28" ry="18" fill="url(#rh-lot)" opacity="0.5" transform="rotate(30,148,148)"/>
+  <!-- 날개 끝 빨강 -->
+  <ellipse cx="36" cy="158" rx="12" ry="8" fill="#CF131B" transform="rotate(-30,36,158)"/>
+  <ellipse cx="164" cy="158" rx="12" ry="8" fill="#CF131B" transform="rotate(30,164,158)"/>
+
+  <!-- 다리 -->
+  <ellipse cx="82" cy="186" rx="14" ry="10" fill="#F5A825"/>
+  <ellipse cx="118" cy="186" rx="14" ry="10" fill="#F5A825"/>
+  <ellipse cx="82" cy="186" rx="14" ry="10" fill="url(#rh-lot)" opacity="0.4"/>
+  <ellipse cx="118" cy="186" rx="14" ry="10" fill="url(#rh-lot)" opacity="0.4"/>
+
+  <!-- 몸통 -->
+  <ellipse cx="100" cy="150" rx="44" ry="38" fill="white"/>
+  <ellipse cx="100" cy="150" rx="44" ry="38" fill="url(#rh-lot)"/>
+  <!-- 가슴 밝은 부분 -->
+  <ellipse cx="100" cy="155" rx="26" ry="24" fill="#F5F8FF" opacity="0.6"/>
+
+  <!-- 롯데 빨간 조끼 -->
+  <path d="M78 136 Q100 130 122 136 L120 170 Q100 174 80 170Z" fill="#CF131B" opacity="0.85"/>
+  <path d="M88 130 L86 170 Q100 173 114 170 L112 130 Q106 127 100 126 Q94 127 88 130Z" fill="white" opacity="0.85"/>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="9" fill="#CF131B">LOTTE</text>
+
+  <!-- 머리 -->
+  <circle cx="100" cy="90" r="46" fill="white"/>
+  <circle cx="100" cy="90" r="46" fill="url(#rh-lot)"/>
+
+  <!-- 롯데 빨간 모자 -->
+  <path d="M64 86 Q100 66 136 86 L134 78 Q100 58 66 78Z" fill="#CF131B"/>
+  <rect x="62" y="77" width="76" height="10" rx="5" fill="#CF131B"/>
+  <path d="M56 87 Q100 78 144 87 Q142 95 100 92 Q58 95 56 87Z" fill="#A00C18"/>
+  <text x="100" y="85" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="10" fill="white">L</text>
+
+  <!-- 눈 -->
+  <circle cx="84" cy="93" r="11" fill="#1A1A2E"/>
+  <circle cx="116" cy="93" r="11" fill="#1A1A2E"/>
+  <circle cx="80.5" cy="89.5" r="4" fill="white" opacity="0.85"/>
+  <circle cx="112.5" cy="89.5" r="4" fill="white" opacity="0.85"/>
+
+  <!-- 부리 -->
+  <path d="M88 104 Q100 102 112 104 L110 112 Q100 116 90 112Z" fill="#F5A825"/>
+  <line x1="88" y1="108" x2="112" y2="108" stroke="#D4880A" stroke-width="1.2"/>
+
+  <!-- 볼 -->
+  <circle cx="74" cy="100" r="8" fill="#FF9966" opacity="0.4"/>
+  <circle cx="126" cy="100" r="8" fill="#FF9966" opacity="0.4"/>
+</svg>

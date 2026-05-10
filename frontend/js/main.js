@@ -1,0 +1,240 @@
+/* ============================================================
+   당신의 조상은 아닙니다만 응원팀 정해드립니다 — main.js
+   ============================================================ */
+
+// ─── 구단 엠블럼 매핑 ────────────────────────────────────────
+const EMBLEM_BASE = 'images/characters/26 구단 엠블럼/';
+const EMBLEM = {
+  'KT 위즈':       EMBLEM_BASE + 'KTwiz.svg',
+  'LG 트윈스':     EMBLEM_BASE + 'LGtwins.svg',
+  'SSG 랜더스':    EMBLEM_BASE + 'SSGlanders.svg',
+  '삼성 라이온즈':  EMBLEM_BASE + 'SAMSUNGlions.svg',
+  '기아 타이거즈':  EMBLEM_BASE + 'KIAtigers.svg',
+  'NC 다이노스':    EMBLEM_BASE + 'NCdinos.svg',
+  '두산 베어스':    EMBLEM_BASE + 'DOOSANbears.svg',
+  '롯데 자이언츠':  EMBLEM_BASE + 'LOTTEgiants.svg',
+  '한화 이글스':    EMBLEM_BASE + 'HANWHAeagles.svg',
+  '키움 히어로즈':  EMBLEM_BASE + 'KIWOOMheroes.svg',
+};
+
+// ─── DOM 참조 ────────────────────────────────────────────────
+const introSection   = document.getElementById('intro');
+const resultSection  = document.getElementById('result');
+const submitBtn      = document.getElementById('submitBtn');
+const numberInput    = document.getElementById('favoriteNumber');
+const loadingOverlay = document.getElementById('loadingOverlay');
+const btnRetry       = document.getElementById('btnRetry');
+const btnCopyLink    = document.getElementById('btnCopyLink');
+const bgIntro        = document.getElementById('bg-intro');
+const bgResult       = document.getElementById('bg-result');
+
+const resultHeader      = document.getElementById('resultHeader');
+const noCarryBanner     = document.getElementById('noCarryBanner');
+const geongseongpaBanner = document.getElementById('geongseongpaBanner');
+const resultTeamName    = document.getElementById('resultTeamName');
+const cardsRow          = document.getElementById('cardsRow');
+const fanTypesBadges    = document.getElementById('fanTypesBadges');
+const fanTypeDesc       = document.getElementById('fanTypeDesc');
+const fanReasonBox      = document.getElementById('fanReasonBox');
+const fanReasonText     = document.getElementById('fanReasonText');
+const fanTipBox         = document.getElementById('fanTipBox');
+
+// ─── 유효성 검사 ─────────────────────────────────────────────
+function validateInput() {
+  const raw = numberInput.value.trim();
+  const num = parseInt(raw, 10);
+  if (raw === '' || isNaN(num) || num < 0 || num > 99) {
+    numberInput.focus();
+    numberInput.style.borderColor = '#f87171';
+    numberInput.style.boxShadow   = '0 0 0 3px rgba(248,113,113,0.20)';
+    setTimeout(() => {
+      numberInput.style.borderColor = '';
+      numberInput.style.boxShadow   = '';
+    }, 1600);
+    return null;
+  }
+  return num;
+}
+
+// ─── 로딩 토글 ───────────────────────────────────────────────
+function setLoading(state) {
+  loadingOverlay.classList.toggle('is-active', state);
+}
+
+// ─── 팀 카드 생성 ────────────────────────────────────────────
+function buildTeamCard(t) {
+  const card = document.createElement('div');
+  card.className = `team-card rank-${t.rank}`;
+
+  // 순위 배지
+  const badge = document.createElement('div');
+  badge.className = 'card-rank-badge';
+  badge.textContent = `${t.rank}위`;
+
+  // 구단 엠블럼
+  const emblem = document.createElement('img');
+  emblem.src = EMBLEM[t.team] || '';
+  emblem.alt = t.team;
+  emblem.className = 'card-emblem';
+
+  // 팀명
+  const name = document.createElement('p');
+  name.className = 'card-team-name';
+  name.textContent = t.team;
+
+  // 급조팬지수
+  const scoreWrap = document.createElement('div');
+  scoreWrap.className = 'card-score-wrap';
+  const scoreNum = document.createElement('span');
+  scoreNum.className = 'card-score-num';
+  scoreNum.textContent = t.fan_index;
+  const scoreLabel = document.createElement('span');
+  scoreLabel.className = 'card-score-label';
+  scoreLabel.textContent = 'pt';
+  scoreWrap.append(scoreNum, scoreLabel);
+
+  card.append(badge, emblem, name, scoreWrap);
+
+  // 1위 카드에만 팬지수 설명 추가
+  if (t.rank === 1 && t.fan_index_desc) {
+    const desc = document.createElement('p');
+    desc.className = 'card-fan-index-desc';
+    desc.textContent = t.fan_index_desc;
+    card.appendChild(desc);
+  }
+
+  return card;
+}
+
+// ─── 결과 화면 렌더 ──────────────────────────────────────────
+function renderResult(data) {
+  const noCarry       = data.no_carry === true;
+  const isGeongseongpa = !data.teams || data.teams.length === 0;
+
+  resultHeader.classList.toggle('hidden', noCarry || isGeongseongpa);
+  noCarryBanner.classList.toggle('hidden', !noCarry || isGeongseongpa);
+  geongseongpaBanner.classList.toggle('hidden', !isGeongseongpa);
+
+  const topTeam = data.teams && data.teams.length > 0 ? data.teams[0].team : '알 수 없음';
+  resultTeamName.textContent = topTeam;
+
+  // 3카드 배치: 2위 | 1위 | 3위
+  cardsRow.innerHTML = '';
+  const rank1 = (data.teams || []).find(t => t.rank === 1);
+  const rank2 = (data.teams || []).find(t => t.rank === 2);
+  const rank3 = (data.teams || []).find(t => t.rank === 3);
+
+  if (rank2) cardsRow.appendChild(buildTeamCard(rank2));
+  if (rank1) cardsRow.appendChild(buildTeamCard(rank1));
+  if (rank3) cardsRow.appendChild(buildTeamCard(rank3));
+
+  // 팬 타입 배지 + 확률
+  fanTypesBadges.innerHTML = '';
+  const types = data.fan_types || [];
+  const probs = data.fan_type_probs || {};
+  const displayTypes = types.length > 0 ? types : ['개성파'];
+
+  displayTypes.forEach(t => {
+    const badge = document.createElement('div');
+    badge.className = 'fan-type-badge';
+
+    const typeName = document.createElement('span');
+    typeName.className = 'fan-type-name';
+    typeName.textContent = t;
+
+    badge.appendChild(typeName);
+
+    if (probs[t] !== undefined) {
+      const pct = document.createElement('span');
+      pct.className = 'fan-type-pct';
+      pct.textContent = `${probs[t]}%`;
+      badge.appendChild(pct);
+    }
+
+    fanTypesBadges.appendChild(badge);
+  });
+
+  // 팬 타입 설명
+  fanTypeDesc.textContent = isGeongseongpa
+    ? '크보라는 우주에서 수많은 별을 마주하고 계시네요!'
+    : (data.fan_type_desc || '이 번호 선수들의 특성을 분석했습니다.');
+
+  // 1위 팀 추천 이유 / 팁
+  fanReasonBox.classList.toggle('hidden', isGeongseongpa);
+  fanTipBox.classList.toggle('hidden', !isGeongseongpa);
+  fanReasonText.textContent = data.teams && data.teams[0]
+    ? data.teams[0].reason
+    : '분석 데이터가 없습니다.';
+
+  introSection.classList.add('hidden');
+  resultSection.classList.remove('hidden');
+  bgIntro.classList.add('hidden');
+  bgResult.classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ─── API 호출 ────────────────────────────────────────────────
+async function fetchRecommendation(number) {
+  const res = await fetch(`/api/recommend?number=${number}`);
+  if (!res.ok) throw new Error(`서버 오류: ${res.status}`);
+  return res.json();
+}
+
+// ─── 제출 핸들러 ─────────────────────────────────────────────
+async function handleSubmit() {
+  const num = validateInput();
+  if (num === null) return;
+
+  setLoading(true);
+  try {
+    const data = await fetchRecommendation(num);
+    renderResult(data);
+  } catch (err) {
+    console.error(err);
+    alert('결과를 불러오는 데 실패했습니다. 잠시 후 다시 시도해 주세요.');
+  } finally {
+    setLoading(false);
+  }
+}
+
+submitBtn.addEventListener('click', handleSubmit);
+numberInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') handleSubmit();
+});
+
+// ─── 다시하기 ────────────────────────────────────────────────
+btnRetry.addEventListener('click', () => {
+  resultSection.classList.add('hidden');
+  introSection.classList.remove('hidden');
+  bgResult.classList.add('hidden');
+  bgIntro.classList.remove('hidden');
+  numberInput.value = '';
+  numberInput.focus();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ─── 링크 복사 ───────────────────────────────────────────────
+btnCopyLink.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(location.href);
+    const orig = btnCopyLink.textContent;
+    btnCopyLink.textContent = '복사 완료!';
+    setTimeout(() => { btnCopyLink.textContent = orig; }, 1800);
+  } catch {
+    alert('링크를 복사해 주세요: ' + location.href);
+  }
+});
+
+// ─── 카카오 공유 ─────────────────────────────────────────────
+const btnKakao = document.getElementById('btnKakao');
+btnKakao.addEventListener('click', () => {
+  if (typeof Kakao !== 'undefined' && Kakao.Share) {
+    Kakao.Share.sendDefault({
+      objectType: 'text',
+      text: `나의 운명 KBO 구단은 ${resultTeamName.textContent}! 너는?`,
+      link: { mobileWebUrl: location.href, webUrl: location.href },
+    });
+  } else {
+    btnCopyLink.click();
+  }
+});

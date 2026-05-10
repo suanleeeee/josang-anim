@@ -1,0 +1,83 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rh-ssg" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.15"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 꼬리 -->
+  <path d="M138 155 Q170 138 174 116 Q170 106 162 110 Q166 124 152 136 Q144 144 138 154Z" fill="#1A1A1A"/>
+  <path d="M138 155 Q170 138 174 116" fill="none" stroke="#3A3A3A" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- 다리 -->
+  <ellipse cx="80" cy="186" rx="18" ry="13" fill="#1A1A1A"/>
+  <ellipse cx="120" cy="186" rx="18" ry="13" fill="#1A1A1A"/>
+  <ellipse cx="80" cy="186" rx="18" ry="13" fill="url(#rh-ssg)" opacity="0.5"/>
+  <ellipse cx="120" cy="186" rx="18" ry="13" fill="url(#rh-ssg)" opacity="0.5"/>
+  <!-- 발바닥 -->
+  <ellipse cx="80" cy="191" rx="12" ry="8" fill="#3A2828" opacity="0.8"/>
+  <ellipse cx="120" cy="191" rx="12" ry="8" fill="#3A2828" opacity="0.8"/>
+
+  <!-- 팔 -->
+  <ellipse cx="56" cy="150" rx="18" ry="13" fill="#1A1A1A" transform="rotate(-18,56,150)"/>
+  <ellipse cx="56" cy="150" rx="18" ry="13" fill="url(#rh-ssg)" opacity="0.4" transform="rotate(-18,56,150)"/>
+  <ellipse cx="144" cy="150" rx="18" ry="13" fill="#1A1A1A" transform="rotate(18,144,150)"/>
+  <ellipse cx="144" cy="150" rx="18" ry="13" fill="url(#rh-ssg)" opacity="0.4" transform="rotate(18,144,150)"/>
+
+  <!-- 몸통 -->
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="#1A1A1A"/>
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="url(#rh-ssg)"/>
+  <!-- 가슴 패치 -->
+  <ellipse cx="100" cy="158" rx="28" ry="25" fill="#3A3A3A" opacity="0.7"/>
+
+  <!-- SSG 빨간 목줄 -->
+  <rect x="70" y="126" width="60" height="12" rx="6" fill="#CE2029"/>
+  <!-- 목줄 태그 -->
+  <circle cx="100" cy="142" r="10" fill="#F5BE10"/>
+  <text x="100" y="146" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="7.5" fill="#1A1A1A">SSG</text>
+
+  <!-- 머리 -->
+  <circle cx="100" cy="90" r="50" fill="#1A1A1A"/>
+  <circle cx="100" cy="90" r="50" fill="url(#rh-ssg)"/>
+
+  <!-- 귀 (라브라도 축 처진 귀) -->
+  <path d="M60 72 Q38 92 38 118 Q50 128 64 116 Q62 92 70 72Z" fill="#1A1A1A"/>
+  <path d="M60 72 Q38 92 38 118 Q50 128 64 116 Q62 92 70 72Z" fill="url(#rh-ssg)" opacity="0.4"/>
+  <path d="M62 76 Q43 96 43 115 Q52 121 63 112 Q62 96 68 76Z" fill="#2E2828" opacity="0.6"/>
+  <path d="M140 72 Q162 92 162 118 Q150 128 136 116 Q138 92 130 72Z" fill="#1A1A1A"/>
+  <path d="M140 72 Q162 92 162 118 Q150 128 136 116 Q138 92 130 72Z" fill="url(#rh-ssg)" opacity="0.4"/>
+  <path d="M138 76 Q157 96 157 115 Q148 121 137 112 Q138 96 132 76Z" fill="#2E2828" opacity="0.6"/>
+
+  <!-- 주둥이 -->
+  <ellipse cx="100" cy="108" rx="26" ry="18" fill="#2E2020"/>
+  <ellipse cx="100" cy="108" rx="26" ry="18" fill="url(#rh-ssg)" opacity="0.3"/>
+
+  <!-- 코 -->
+  <ellipse cx="100" cy="100" rx="10" ry="7" fill="#0A0A0A"/>
+  <ellipse cx="97" cy="98" rx="3.5" ry="2.2" fill="#4A4A4A" opacity="0.5"/>
+
+  <!-- 입 -->
+  <path d="M88 114 Q100 120 112 114" stroke="#4A3030" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="100" y1="107" x2="100" y2="114" stroke="#4A3030" stroke-width="1.8"/>
+
+  <!-- 혀 -->
+  <ellipse cx="100" cy="120" rx="11" ry="8" fill="#E84040"/>
+  <line x1="100" y1="114" x2="100" y2="128" stroke="#C03030" stroke-width="1.5"/>
+
+  <!-- 눈 -->
+  <circle cx="82" cy="84" r="13" fill="#1A2A3A"/>
+  <circle cx="118" cy="84" r="13" fill="#1A2A3A"/>
+  <circle cx="82" cy="84" r="10" fill="#1A1A1A"/>
+  <circle cx="118" cy="84" r="10" fill="#1A1A1A"/>
+  <circle cx="78.5" cy="80.5" r="4" fill="white" opacity="0.85"/>
+  <circle cx="114.5" cy="80.5" r="4" fill="white" opacity="0.85"/>
+
+  <!-- 눈썹 점 (강아지 특징) -->
+  <circle cx="82" cy="68" r="5" fill="#3A3030"/>
+  <circle cx="118" cy="68" r="5" fill="#3A3030"/>
+
+  <!-- 볼 -->
+  <circle cx="70" cy="100" r="8" fill="#CE2029" opacity="0.18"/>
+  <circle cx="130" cy="100" r="8" fill="#CE2029" opacity="0.18"/>
+</svg>

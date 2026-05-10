@@ -1,0 +1,84 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rh-kia" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.12"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 꼬리 -->
+  <path d="M140 160 Q168 145 172 122 Q168 114 160 118 Q164 132 150 145 Q144 152 140 160Z" fill="#F07020"/>
+  <path d="M140 160 Q168 145 172 122" fill="none" stroke="#1A1208" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <path d="M164 120 Q162 130 154 138" fill="none" stroke="#1A1208" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- 다리 -->
+  <ellipse cx="80" cy="184" rx="18" ry="13" fill="#F07020"/>
+  <ellipse cx="120" cy="184" rx="18" ry="13" fill="#F07020"/>
+  <ellipse cx="80" cy="184" rx="18" ry="13" fill="url(#rh-kia)" opacity="0.6"/>
+  <ellipse cx="120" cy="184" rx="18" ry="13" fill="url(#rh-kia)" opacity="0.6"/>
+
+  <!-- 팔 -->
+  <ellipse cx="56" cy="148" rx="17" ry="13" fill="#F07020" transform="rotate(-20,56,148)"/>
+  <ellipse cx="56" cy="148" rx="17" ry="13" fill="url(#rh-kia)" opacity="0.5" transform="rotate(-20,56,148)"/>
+  <ellipse cx="144" cy="148" rx="17" ry="13" fill="#F07020" transform="rotate(20,144,148)"/>
+  <ellipse cx="144" cy="148" rx="17" ry="13" fill="url(#rh-kia)" opacity="0.5" transform="rotate(20,144,148)"/>
+
+  <!-- 몸통 -->
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="#F07020"/>
+  <ellipse cx="100" cy="152" rx="46" ry="40" fill="url(#rh-kia)"/>
+  <!-- 몸통 줄무늬 -->
+  <path d="M74 130 Q78 152 74 172" stroke="#1A1208" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M100 126 Q104 152 100 174" stroke="#1A1208" stroke-width="4.5" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M126 130 Q122 152 126 172" stroke="#1A1208" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <!-- 배 -->
+  <ellipse cx="100" cy="158" rx="26" ry="24" fill="#FFF5E8" opacity="0.65"/>
+
+  <!-- 머리 -->
+  <circle cx="100" cy="90" r="52" fill="#F07020"/>
+  <circle cx="100" cy="90" r="52" fill="url(#rh-kia)"/>
+
+  <!-- 귀 -->
+  <circle cx="64" cy="52" r="20" fill="#F07020"/>
+  <circle cx="136" cy="52" r="20" fill="#F07020"/>
+  <circle cx="64" cy="52" r="20" fill="url(#rh-kia)" opacity="0.6"/>
+  <circle cx="136" cy="52" r="20" fill="url(#rh-kia)" opacity="0.6"/>
+  <circle cx="64" cy="52" r="10" fill="#E86040" opacity="0.7"/>
+  <circle cx="136" cy="52" r="10" fill="#E86040" opacity="0.7"/>
+
+  <!-- 줄무늬 (얼굴) -->
+  <path d="M66 68 Q60 84 62 96" stroke="#1A1208" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M134 68 Q140 84 138 96" stroke="#1A1208" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M80 52 Q78 62 75 70" stroke="#1A1208" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.45"/>
+  <path d="M120 52 Q122 62 125 70" stroke="#1A1208" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- 주둥이 -->
+  <ellipse cx="100" cy="110" rx="24" ry="17" fill="#FFF5E8"/>
+  <ellipse cx="100" cy="110" rx="24" ry="17" fill="url(#rh-kia)" opacity="0.3"/>
+
+  <!-- 눈 -->
+  <circle cx="82" cy="86" r="12" fill="#1A1A1A"/>
+  <circle cx="118" cy="86" r="12" fill="#1A1A1A"/>
+  <circle cx="78" cy="82" r="4.5" fill="white" opacity="0.85"/>
+  <circle cx="114" cy="82" r="4.5" fill="white" opacity="0.85"/>
+
+  <!-- 코 -->
+  <path d="M94 106 Q100 103 106 106 Q103 111 100 112 Q97 111 94 106Z" fill="#C03010"/>
+
+  <!-- 수염 -->
+  <line x1="62" y1="112" x2="90" y2="114" stroke="#8B6040" stroke-width="1.5" opacity="0.6"/>
+  <line x1="62" y1="118" x2="90" y2="117" stroke="#8B6040" stroke-width="1.5" opacity="0.6"/>
+  <line x1="110" y1="114" x2="138" y2="112" stroke="#8B6040" stroke-width="1.5" opacity="0.6"/>
+  <line x1="110" y1="117" x2="138" y2="118" stroke="#8B6040" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- 입 -->
+  <path d="M92 118 Q100 125 108 118" stroke="#C03010" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="100" y1="112" x2="100" y2="118" stroke="#C03010" stroke-width="1.8"/>
+
+  <!-- 볼 -->
+  <circle cx="72" cy="104" r="9" fill="#FF9966" opacity="0.4"/>
+  <circle cx="128" cy="104" r="9" fill="#FF9966" opacity="0.4"/>
+
+  <!-- KIA 빨간 이마 밴드 -->
+  <path d="M64 73 Q100 58 136 73" stroke="#EA0029" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <text x="100" y="72" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="9" fill="white">KIA</text>
+</svg>
