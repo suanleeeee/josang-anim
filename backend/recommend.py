@@ -176,7 +176,7 @@ def _classify_fan_types(players: list, top_player: dict = None) -> tuple:
             probs["유격콤"] = 100
 
         age = top_player.get("age")
-        if age is not None and age <= 25:
+        if age is not None and age <= 23:
             types.append("얼라콤")
             probs["얼라콤"] = 100
 
