@@ -697,21 +697,24 @@ section {
 
 .about-easter-link {
   display: block;
-  margin-top: 24px;
+  margin-top: 20px;
   background: none;
   border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 16px 0 0;
+  width: 100%;
   font-family: inherit;
-  font-size: 0.68rem;
-  color: rgba(122, 92, 46, 0.32);
+  font-size: 0.80rem;
+  font-weight: 500;
+  color: var(--text-muted);
   cursor: pointer;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   transition: color 0.3s;
   text-align: left;
-  padding: 0;
 }
 
 .about-easter-link:hover {
-  color: rgba(122, 92, 46, 0.60);
+  color: var(--text-mid);
 }
 
 .about-back {
