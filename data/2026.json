@@ -1,0 +1,2804 @@
+{
+  "updated_at": "2026-05-10T19:30:51+09:00",
+  "rosters": {
+    "KT 위즈": [
+      {
+        "jersey": "1",
+        "name": "고영표",
+        "position": "투수",
+        "bat_throw": "우언우타",
+        "birthdate": "1991-09-16",
+        "age": 34
+      },
+      {
+        "jersey": "11",
+        "name": "스기모토",
+        "position": "투수",
+        "bat_throw": "우투우타",
+        "birthdate": "2000-05-19",
+        "age": 25
+      },
+      {
+        "jersey": "12",
+        "name": "우규민",
+        "position": "투수",
+        "bat_throw": "우언우타",
+        "birthdate": "1985-01-21",
+        "age": 41
+      },
+      {
+        "jersey": "19",
+        "name": "배제성",
+        "position": "선수명",
+        "bat_throw": "투수",
+        "birthdate": "우투좌타",
+        "age": null
+      },
+      {
+        "jersey": "26",
+        "name": "김민수",
+        "position": "투수",
+        "bat_throw": "우투우타",
+        "birthdate": "1992-07-24",
+        "age": 33
+      },
+      {
+        "jersey": "29",
+        "name": "전용주",
+        "position": "투수",
+        "bat_throw": "좌투좌타",
+        "birthdate": "2000-02-12",
+        "age": 26
+      },
+      {
+        "jersey": "32",
+        "name": "사우어",
+        "position": "투수",
+        "bat_throw": "우투우타",
+        "birthdate": "1999-01-21",
+        "age": 27
+      },
+      {
+        "jersey": "35",
+        "name": "한승혁",
+        "position": "투수",
+        "bat_throw": "우투좌타",
+        "birthdate": "1993-01-03",
+        "age": 33
+      },
+      {
+        "jersey": "36",
+        "name": "보쉴리",
+        "position": "투수",
+        "bat_throw": "우투우타",
+        "birthdate": "1993-10-01",
+        "age": 32
+      },
+      {
+        "jersey": "38",
+        "name": "주권",
+        "position": "투수",
+        "bat_throw": "우투우타",
+        "birthdate": "1995-05-31",
+        "age": 30
+      },
+      {
+        "jersey": "41",
+        "name": "손동현",
+        "position": "투수",
+        "bat_throw": "우투우타",
+        "birthdate": "2001-01-23",
+        "age": 25
+      },
+      {
+        "jersey": "47",
+        "name": "오원석",
+        "position": "투수",
+        "bat_throw": "좌투좌타",
+        "birthdate": "2001-04-23",
+        "age": 25
+      },
+      {
+        "jersey": "60",
+        "name": "박영현",
+        "position": "투수",
+        "bat_throw": "우투우타",
+        "birthdate": "2003-10-11",
+        "age": 22
+      },
+      {
+        "jersey": "61",
+        "name": "김정운",
+        "position": "투수",
+        "bat_throw": "우언우타",
+        "birthdate": "2004-04-21",
+        "age": 22
+      },
+      {
+        "jersey": "22",
+        "name": "장성우",
+        "position": "포수",
+        "bat_throw": "우투우타",
+        "birthdate": "1990-01-17",
+        "age": 36
+      },
+      {
+        "jersey": "45",
+        "name": "한승택",
+        "position": "포수",
+        "bat_throw": "우투우타",
+        "birthdate": "1994-06-21",
+        "age": 31
+      },
+      {
+        "jersey": "55",
+        "name": "강현우",
+        "position": "포수",
+        "bat_throw": "우투우타",
+        "birthdate": "2001-04-13",
+        "age": 25
+      },
+      {
+        "jersey": "34",
+        "name": "힐리어드",
+        "position": "내야수",
+        "bat_throw": "좌투좌타",
+        "birthdate": "1994-02-21",
+        "age": 32
+      },
+      {
+        "jersey": "4",
+        "name": "오윤석",
+        "position": "내야수",
+        "bat_throw": "우투우타",
+        "birthdate": "1992-02-24",
+        "age": 34
+      },
+      {
+        "jersey": "52",
+        "name": "권동진",
+        "position": "내야수",
+        "bat_throw": "우투좌타",
+        "birthdate": "1998-09-12",
+        "age": 27
+      },
+      {
+        "jersey": "56",
+        "name": "장준원",
+        "position": "내야수",
+        "bat_throw": "우투우타",
+        "birthdate": "1995-11-21",
+        "age": 30
+      },
+      {
+        "jersey": "6",
+        "name": "이강민",
+        "position": "내야수",
+        "bat_throw": "우투우타",
+        "birthdate": "2007-01-27",
+        "age": 19
+      },
+      {
+        "jersey": "7",
+        "name": "김상수",
+        "position": "내야수",
+        "bat_throw": "우투우타",
+        "birthdate": "1990-03-23",
+        "age": 36
+      },
+      {
+        "jersey": "10",
+        "name": "김현수",
+        "position": "외야수",
+        "bat_throw": "우투좌타",
+        "birthdate": "1988-01-12",
+        "age": 38
+      },
+      {
+        "jersey": "27",
+        "name": "배정대",
+        "position": "외야수",
+        "bat_throw": "우투우타",
+        "birthdate": "1995-06-12",
+        "age": 30
+      },
+      {
+        "jersey": "3",
+        "name": "최원준",
+        "position": "외야수",
+        "bat_throw": "우투좌타",
+        "birthdate": "1997-03-23",
+        "age": 29
+      },
+      {
+        "jersey": "33",
+        "name": "이정훈",
+        "position": "외야수",
+        "bat_throw": "우투좌타",
+        "birthdate": "1994-12-07",
+        "age": 31
+      },
+      {
+        "jersey": "53",
+        "name": "김민혁",
+        "position": "외야수",
+        "bat_throw": "우투좌타",
+        "birthdate": "1995-11-21",
+        "age": 30
+      },
+      {
+        "jersey": "67",
+        "name": "유준규",
+        "position": "외야수",
+        "bat_throw": "우투좌타",
+        "birthdate": "2002-08-16",
+        "age": 23
+      }
+    ],
+    "LG 트윈스": [
+      {
+        "jersey": "1",
+        "name": "임찬규",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "11",
+        "name": "함덕주",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "13",
+        "name": "송승기",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "20",
+        "name": "우강훈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "25",
+        "name": "배재준",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "29",
+        "name": "손주영",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "30",
+        "name": "톨허스트",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "31",
+        "name": "이정용",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "42",
+        "name": "김진성",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "45",
+        "name": "김진수",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "46",
+        "name": "치리노스",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "47",
+        "name": "김윤식",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "50",
+        "name": "장현식",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "67",
+        "name": "김영우",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "68",
+        "name": "웰스",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "27",
+        "name": "박동원",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "63",
+        "name": "이주헌",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "10",
+        "name": "오지환",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "23",
+        "name": "오스틴",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "36",
+        "name": "김성진",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "4",
+        "name": "신민재",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "53",
+        "name": "천성호",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "6",
+        "name": "구본혁",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "7",
+        "name": "이영빈",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "17",
+        "name": "박해민",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "5",
+        "name": "김주성",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "51",
+        "name": "홍창기",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "52",
+        "name": "이재원",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "55",
+        "name": "송찬의",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "삼성 라이온즈": [
+      {
+        "jersey": "15",
+        "name": "미야지",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "18",
+        "name": "원태인",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "20",
+        "name": "최원태",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "26",
+        "name": "이승현",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "27",
+        "name": "김태훈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "28",
+        "name": "이승민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "38",
+        "name": "임기영",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "42",
+        "name": "양창섭",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "55",
+        "name": "배찬승",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "62",
+        "name": "김재윤",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "64",
+        "name": "오러클린",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "69",
+        "name": "정재훈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "75",
+        "name": "후라도",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "24",
+        "name": "김도환",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "46",
+        "name": "장승현",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "52",
+        "name": "박세혁",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "0",
+        "name": "디아즈",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "16",
+        "name": "류지혁",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "53",
+        "name": "양우현",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "56",
+        "name": "김상준",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "61",
+        "name": "전병우",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "9",
+        "name": "박계범",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "13",
+        "name": "이성규",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "32",
+        "name": "김헌곤",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "34",
+        "name": "최형우",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "39",
+        "name": "김성윤",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "5",
+        "name": "구자욱",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "58",
+        "name": "김지찬",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "66",
+        "name": "박승규",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "SSG 랜더스": [
+      {
+        "jersey": "00",
+        "name": "긴지로",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "1",
+        "name": "김민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "19",
+        "name": "조병현",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "21",
+        "name": "장지훈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "23",
+        "name": "타케다",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "30",
+        "name": "최민준",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "34",
+        "name": "한두솔",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "38",
+        "name": "노경은",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "39",
+        "name": "김건우",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "41",
+        "name": "베니지아노",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "42",
+        "name": "문승원",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "61",
+        "name": "김도현",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "90",
+        "name": "이준기",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "92",
+        "name": "이로운",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "20",
+        "name": "조형우",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "56",
+        "name": "이지영",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "10",
+        "name": "안상현",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "14",
+        "name": "최정",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "2",
+        "name": "박성한",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "3",
+        "name": "정준재",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "97",
+        "name": "홍대인",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "15",
+        "name": "채현우",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "27",
+        "name": "에레디아",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "32",
+        "name": "김재환",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "37",
+        "name": "오태곤",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "45",
+        "name": "류효승",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "48",
+        "name": "김정민",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "54",
+        "name": "최지훈",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "7",
+        "name": "최준우",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "기아 타이거즈": [
+      {
+        "jersey": "10",
+        "name": "김태형",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "11",
+        "name": "조상우",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "28",
+        "name": "이형범",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "33",
+        "name": "올러",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "38",
+        "name": "장재혁",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "39",
+        "name": "최지민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "40",
+        "name": "네일",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "41",
+        "name": "황동하",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "48",
+        "name": "이의리",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "49",
+        "name": "김범수",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "54",
+        "name": "양현종",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "55",
+        "name": "한재승",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "62",
+        "name": "정해영",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "65",
+        "name": "성영탁",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "25",
+        "name": "한준수",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "42",
+        "name": "김태군",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "12",
+        "name": "정현창",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "14",
+        "name": "김규성",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "2",
+        "name": "박민",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "24",
+        "name": "아데를린",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "3",
+        "name": "김선빈",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "32",
+        "name": "데일",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "5",
+        "name": "김도영",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "50",
+        "name": "박상준",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "1",
+        "name": "박정우",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "15",
+        "name": "박재현",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "27",
+        "name": "김호령",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "31",
+        "name": "한승연",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "47",
+        "name": "나성범",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "두산 베어스": [
+      {
+        "jersey": "1",
+        "name": "박치국",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "15",
+        "name": "최주형",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "16",
+        "name": "김정우",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "17",
+        "name": "박정수",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "18",
+        "name": "타무라",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "28",
+        "name": "최승용",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "29",
+        "name": "이병헌",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "30",
+        "name": "양재훈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "39",
+        "name": "잭로그",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "47",
+        "name": "곽빈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "48",
+        "name": "벤자민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "49",
+        "name": "박신지",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "50",
+        "name": "이영하",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "59",
+        "name": "최준호",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "22",
+        "name": "김기연",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "25",
+        "name": "양의지",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "27",
+        "name": "윤준호",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "13",
+        "name": "이유찬",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "23",
+        "name": "강승호",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "37",
+        "name": "박지훈",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "52",
+        "name": "박준순",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "6",
+        "name": "오명진",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "7",
+        "name": "박찬호",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "2",
+        "name": "김민석",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "24",
+        "name": "카메론",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "31",
+        "name": "정수빈",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "33",
+        "name": "김인태",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "34",
+        "name": "홍성호",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "51",
+        "name": "조수행",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "한화 이글스": [
+      {
+        "jersey": "18",
+        "name": "이상규",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "19",
+        "name": "왕옌청",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "27",
+        "name": "이민우",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "39",
+        "name": "박재규",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "44",
+        "name": "김서현",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "48",
+        "name": "원종혁",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "49",
+        "name": "윤산흠",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "57",
+        "name": "조동욱",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "60",
+        "name": "쿠싱",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "61",
+        "name": "정우주",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "64",
+        "name": "권민규",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "68",
+        "name": "박준영",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "69",
+        "name": "강건우",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "96",
+        "name": "박준영",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "99",
+        "name": "류현진",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "13",
+        "name": "최재훈",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "59",
+        "name": "허인서",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "5",
+        "name": "이도윤",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "50",
+        "name": "강백호",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "63",
+        "name": "박정현",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "7",
+        "name": "심우준",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "8",
+        "name": "노시환",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "95",
+        "name": "황영묵",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "10",
+        "name": "이진영",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "25",
+        "name": "김태연",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "30",
+        "name": "페라자",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "37",
+        "name": "이원석",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "51",
+        "name": "문현빈",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "54",
+        "name": "오재원",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "NC 다이노스": [
+      {
+        "jersey": "11",
+        "name": "토다",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "17",
+        "name": "김영규",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "18",
+        "name": "신민혁",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "19",
+        "name": "임지민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "3",
+        "name": "라일리",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "30",
+        "name": "임정호",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "40",
+        "name": "이준혁",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "41",
+        "name": "류진욱",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "46",
+        "name": "손주환",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "54",
+        "name": "김진호",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "57",
+        "name": "전사민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "59",
+        "name": "구창모",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "60",
+        "name": "김태경",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "61",
+        "name": "배재환",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "66",
+        "name": "테일러",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "22",
+        "name": "안중열",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "25",
+        "name": "김형준",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "13",
+        "name": "김한별",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "14",
+        "name": "최정원",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "16",
+        "name": "도태훈",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "2",
+        "name": "박민우",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "34",
+        "name": "오영수",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "5",
+        "name": "서호철",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "6",
+        "name": "오태양",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "7",
+        "name": "김주원",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "33",
+        "name": "한석현",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "36",
+        "name": "권희동",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "37",
+        "name": "박건우",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "55",
+        "name": "이우성",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "롯데 자이언츠": [
+      {
+        "jersey": "15",
+        "name": "김진욱",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "17",
+        "name": "현도훈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "21",
+        "name": "박세웅",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "22",
+        "name": "구승민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "23",
+        "name": "비슬리",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "31",
+        "name": "로드리게스",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "34",
+        "name": "김원중",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "36",
+        "name": "박정민",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "43",
+        "name": "나균안",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "49",
+        "name": "최이준",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "55",
+        "name": "윤성빈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "56",
+        "name": "최준용",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "57",
+        "name": "정현수",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "65",
+        "name": "정철원",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "27",
+        "name": "유강남",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "28",
+        "name": "손성빈",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "13",
+        "name": "전민재",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "2",
+        "name": "고승민",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "30",
+        "name": "이호준",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "5",
+        "name": "김세민",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "51",
+        "name": "나승엽",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "52",
+        "name": "노진혁",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "53",
+        "name": "박승욱",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "0",
+        "name": "황성빈",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "29",
+        "name": "레이예스",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "33",
+        "name": "손호영",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "7",
+        "name": "장두성",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "8",
+        "name": "전준우",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "91",
+        "name": "윤동희",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ],
+    "키움 히어로즈": [
+      {
+        "jersey": "18",
+        "name": "박준현",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "20",
+        "name": "조영건",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "21",
+        "name": "김성진",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "31",
+        "name": "오석주",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "40",
+        "name": "박진형",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "41",
+        "name": "안우진",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "46",
+        "name": "원종현",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "48",
+        "name": "유토",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "54",
+        "name": "알칸타라",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "59",
+        "name": "김서준",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "61",
+        "name": "배동현",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "64",
+        "name": "정세영",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "94",
+        "name": "박정훈",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "99",
+        "name": "김동규",
+        "position": "투수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "12",
+        "name": "김건희",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "56",
+        "name": "박성빈",
+        "position": "포수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "00",
+        "name": "권혁빈",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "14",
+        "name": "서건창",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "53",
+        "name": "최주환",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "58",
+        "name": "이주형",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "6",
+        "name": "오선진",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "60",
+        "name": "양현종",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "9",
+        "name": "안치홍",
+        "position": "내야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "17",
+        "name": "임병욱",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "2",
+        "name": "이주형",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "22",
+        "name": "브룩스",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "25",
+        "name": "주성원",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "57",
+        "name": "박주홍",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      },
+      {
+        "jersey": "87",
+        "name": "박수종",
+        "position": "외야수",
+        "bat_throw": "",
+        "birthdate": "",
+        "age": null
+      }
+    ]
+  },
+  "stats": {
+    "박성한": {
+      "player_id": "67893",
+      "team_code": "SSG",
+      "ops": "1.049",
+      "slg": "0.549",
+      "era": null,
+      "is_pitcher": false
+    },
+    "오스틴": {
+      "player_id": "53123",
+      "team_code": "LG",
+      "ops": "1.103",
+      "slg": "0.662",
+      "era": null,
+      "is_pitcher": false
+    },
+    "최형우": {
+      "player_id": "72443",
+      "team_code": "삼성",
+      "ops": "1.091",
+      "slg": "0.597",
+      "era": null,
+      "is_pitcher": false
+    },
+    "류지혁": {
+      "player_id": "62234",
+      "team_code": "삼성",
+      "ops": "1.017",
+      "slg": "0.567",
+      "era": null,
+      "is_pitcher": false
+    },
+    "레이예스": {
+      "player_id": "54529",
+      "team_code": "롯데",
+      "ops": "0.947",
+      "slg": "0.542",
+      "era": null,
+      "is_pitcher": false
+    },
+    "이우성": {
+      "player_id": "63260",
+      "team_code": "NC",
+      "ops": "0.901",
+      "slg": "0.518",
+      "era": null,
+      "is_pitcher": false
+    },
+    "박민우": {
+      "player_id": "62907",
+      "team_code": "NC",
+      "ops": "0.869",
+      "slg": "0.448",
+      "era": null,
+      "is_pitcher": false
+    },
+    "페라자": {
+      "player_id": "54730",
+      "team_code": "한화",
+      "ops": "0.974",
+      "slg": "0.536",
+      "era": null,
+      "is_pitcher": false
+    },
+    "박재현": {
+      "player_id": "55636",
+      "team_code": "KIA",
+      "ops": "0.906",
+      "slg": "0.523",
+      "era": null,
+      "is_pitcher": false
+    },
+    "박준순": {
+      "player_id": "55252",
+      "team_code": "두산",
+      "ops": "0.894",
+      "slg": "0.507",
+      "era": null,
+      "is_pitcher": false
+    },
+    "천성호": {
+      "player_id": "50054",
+      "team_code": "LG",
+      "ops": "0.795",
+      "slg": "0.415",
+      "era": null,
+      "is_pitcher": false
+    },
+    "강백호": {
+      "player_id": "68050",
+      "team_code": "한화",
+      "ops": "0.916",
+      "slg": "0.524",
+      "era": null,
+      "is_pitcher": false
+    },
+    "디아즈": {
+      "player_id": "54400",
+      "team_code": "삼성",
+      "ops": "0.859",
+      "slg": "0.464",
+      "era": null,
+      "is_pitcher": false
+    },
+    "문현빈": {
+      "player_id": "53764",
+      "team_code": "한화",
+      "ops": "0.996",
+      "slg": "0.561",
+      "era": null,
+      "is_pitcher": false
+    },
+    "문보경": {
+      "player_id": "69102",
+      "team_code": "LG",
+      "ops": "0.892",
+      "slg": "0.430",
+      "era": null,
+      "is_pitcher": false
+    },
+    "김상수": {
+      "player_id": "79402",
+      "team_code": "KT",
+      "ops": "0.751",
+      "slg": "0.336",
+      "era": null,
+      "is_pitcher": false
+    },
+    "카메론": {
+      "player_id": "56251",
+      "team_code": "두산",
+      "ops": "0.911",
+      "slg": "0.550",
+      "era": null,
+      "is_pitcher": false
+    },
+    "최원준": {
+      "player_id": "66606",
+      "team_code": "KT",
+      "ops": "0.794",
+      "slg": "0.403",
+      "era": null,
+      "is_pitcher": false
+    },
+    "김현수": {
+      "player_id": "76290",
+      "team_code": "KT",
+      "ops": "0.785",
+      "slg": "0.424",
+      "era": null,
+      "is_pitcher": false
+    },
+    "안치홍": {
+      "player_id": "79608",
+      "team_code": "키움",
+      "ops": "0.804",
+      "slg": "0.419",
+      "era": null,
+      "is_pitcher": false
+    },
+    "김선빈": {
+      "player_id": "78603",
+      "team_code": "KIA",
+      "ops": "0.789",
+      "slg": "0.381",
+      "era": null,
+      "is_pitcher": false
+    },
+    "정준재": {
+      "player_id": "54812",
+      "team_code": "SSG",
+      "ops": "0.780",
+      "slg": "0.398",
+      "era": null,
+      "is_pitcher": false
+    },
+    "김민석": {
+      "player_id": "53554",
+      "team_code": "두산",
+      "ops": "0.766",
+      "slg": "0.402",
+      "era": null,
+      "is_pitcher": false
+    },
+    "전민재": {
+      "player_id": "68205",
+      "team_code": "롯데",
+      "ops": "0.663",
+      "slg": "0.324",
+      "era": null,
+      "is_pitcher": false
+    },
+    "박찬호": {
+      "player_id": "64646",
+      "team_code": "두산",
+      "ops": "0.767",
+      "slg": "0.393",
+      "era": null,
+      "is_pitcher": false
+    },
+    "김도영": {
+      "player_id": "52605",
+      "team_code": "KIA",
+      "ops": "0.985",
+      "slg": "0.600",
+      "era": null,
+      "is_pitcher": false
+    },
+    "김지찬": {
+      "player_id": "50458",
+      "team_code": "삼성",
+      "ops": "0.732",
+      "slg": "0.342",
+      "era": null,
+      "is_pitcher": false
+    },
+    "데이비슨": {
+      "player_id": "54944",
+      "team_code": "NC",
+      "ops": "0.809",
+      "slg": "0.465",
+      "era": null,
+      "is_pitcher": false
+    },
+    "박건우": {
+      "player_id": "79215",
+      "team_code": "NC",
+      "ops": "0.882",
+      "slg": "0.513",
+      "era": null,
+      "is_pitcher": false
+    },
+    "최정": {
+      "player_id": "75847",
+      "team_code": "SSG",
+      "ops": "0.932",
+      "slg": "0.550",
+      "era": null,
+      "is_pitcher": false
+    },
+    "웰스": {
+      "player_id": "55348",
+      "team_code": "LG",
+      "ops": null,
+      "era": "2.06",
+      "is_pitcher": true
+    },
+    "후라도": {
+      "player_id": "53375",
+      "team_code": "삼성",
+      "ops": null,
+      "era": "2.12",
+      "is_pitcher": true
+    },
+    "올러": {
+      "player_id": "55633",
+      "team_code": "KIA",
+      "ops": null,
+      "era": "2.44",
+      "is_pitcher": true
+    },
+    "김진욱": {
+      "player_id": "51516",
+      "team_code": "롯데",
+      "ops": null,
+      "era": "2.53",
+      "is_pitcher": true
+    },
+    "최민석": {
+      "player_id": "55268",
+      "team_code": "두산",
+      "ops": null,
+      "era": "2.56",
+      "is_pitcher": true
+    },
+    "오원석": {
+      "player_id": "50859",
+      "team_code": "KT",
+      "ops": null,
+      "era": "2.63",
+      "is_pitcher": true
+    },
+    "나균안": {
+      "player_id": "67539",
+      "team_code": "롯데",
+      "ops": null,
+      "era": "2.63",
+      "is_pitcher": true
+    },
+    "왕옌청": {
+      "player_id": "56719",
+      "team_code": "한화",
+      "ops": null,
+      "era": "2.64",
+      "is_pitcher": true
+    },
+    "잭로그": {
+      "player_id": "55239",
+      "team_code": "두산",
+      "ops": null,
+      "era": "3.19",
+      "is_pitcher": true
+    },
+    "비슬리": {
+      "player_id": "56523",
+      "team_code": "롯데",
+      "ops": null,
+      "era": "3.22",
+      "is_pitcher": true
+    },
+    "류현진": {
+      "player_id": "76715",
+      "team_code": "한화",
+      "ops": null,
+      "era": "3.25",
+      "is_pitcher": true
+    },
+    "오러클린": {
+      "player_id": "56464",
+      "team_code": "삼성",
+      "ops": null,
+      "era": "3.38",
+      "is_pitcher": true
+    },
+    "곽빈": {
+      "player_id": "68220",
+      "team_code": "두산",
+      "ops": null,
+      "era": "3.43",
+      "is_pitcher": true
+    },
+    "보쉴리": {
+      "player_id": "56036",
+      "team_code": "KT",
+      "ops": null,
+      "era": "3.55",
+      "is_pitcher": true
+    },
+    "알칸타라": {
+      "player_id": "69045",
+      "team_code": "키움",
+      "ops": null,
+      "era": "3.59",
+      "is_pitcher": true
+    },
+    "소형준": {
+      "player_id": "50030",
+      "team_code": "KT",
+      "ops": null,
+      "era": "3.69",
+      "is_pitcher": true
+    },
+    "김건우": {
+      "player_id": "51867",
+      "team_code": "SSG",
+      "ops": null,
+      "era": "3.75",
+      "is_pitcher": true
+    },
+    "톨허스트": {
+      "player_id": "55130",
+      "team_code": "LG",
+      "ops": null,
+      "era": "3.86",
+      "is_pitcher": true
+    },
+    "구창모": {
+      "player_id": "65933",
+      "team_code": "NC",
+      "ops": null,
+      "era": "3.96",
+      "is_pitcher": true
+    },
+    "사우어": {
+      "player_id": "56032",
+      "team_code": "KT",
+      "ops": null,
+      "era": "3.98",
+      "is_pitcher": true
+    },
+    "네일": {
+      "player_id": "54640",
+      "team_code": "KIA",
+      "ops": null,
+      "era": "4.00",
+      "is_pitcher": true
+    },
+    "박세웅": {
+      "player_id": "64021",
+      "team_code": "롯데",
+      "ops": null,
+      "era": "4.23",
+      "is_pitcher": true
+    },
+    "로드리게스": {
+      "player_id": "56531",
+      "team_code": "롯데",
+      "ops": null,
+      "era": "4.58",
+      "is_pitcher": true
+    },
+    "임찬규": {
+      "player_id": "61101",
+      "team_code": "LG",
+      "ops": null,
+      "era": "4.91",
+      "is_pitcher": true
+    },
+    "고영표": {
+      "player_id": "64001",
+      "team_code": "KT",
+      "ops": null,
+      "era": "5.50",
+      "is_pitcher": true
+    }
+  },
+  "war": {
+    "박성한": {
+      "war": 2.7,
+      "rank": 1
+    },
+    "후라도": {
+      "war": 2.55,
+      "rank": 2
+    },
+    "오스틴": {
+      "war": 2.48,
+      "rank": 3
+    },
+    "문현빈": {
+      "war": 2.44,
+      "rank": 4
+    },
+    "류지혁": {
+      "war": 2.29,
+      "rank": 5
+    },
+    "김도영": {
+      "war": 2.2,
+      "rank": 6
+    },
+    "김진욱": {
+      "war": 2.05,
+      "rank": 7
+    },
+    "페라자": {
+      "war": 2.03,
+      "rank": 8
+    },
+    "박민우": {
+      "war": 2.0,
+      "rank": 9
+    },
+    "올러": {
+      "war": 1.9,
+      "rank": 10
+    }
+  }
+}

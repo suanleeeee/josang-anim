@@ -14,8 +14,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
-from kbo_scraper import find_players_by_jersey, JERSEY_MIN, JERSEY_MAX
+from data_store import find_players_by_jersey, get_updated_at
 from recommend import build_recommendation
+
+JERSEY_MIN = 0
+JERSEY_MAX = 99
 
 app = FastAPI(title="응원팀 추천 API")
 
@@ -39,7 +42,7 @@ async def recommend(number: int = Query(..., ge=JERSEY_MIN, le=JERSEY_MAX)):
 
 @app.get("/api/health")
 async def health():
-    return {"status": "ok"}
+    return {"status": "ok", "data_updated_at": get_updated_at()}
 
 
 # ── 프론트엔드 정적 파일 서빙 ──────────────────────────────────────────────────

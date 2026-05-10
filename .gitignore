@@ -6,7 +6,7 @@ __pycache__/
 venv/
 env/
 
-# 캐시 / 진단 파일
+# 캐시 / 진단 파일 (data/*.json 은 커밋 대상)
 data/cache/
 data/scraper/jersey_*.json
 data/scraper/diag_*.py
