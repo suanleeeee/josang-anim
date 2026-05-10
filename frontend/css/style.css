@@ -289,7 +289,7 @@ section {
 
 .result-header {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 48px;
 }
 
 .result-header .result-label {
@@ -302,7 +302,7 @@ section {
 }
 
 .result-header h2 {
-  font-size: clamp(1.1rem, 3.8vw, 1.6rem);
+  font-size: clamp(1.4rem, 5.5vw, 2.2rem);
   font-weight: 800;
   color: var(--text-dark);
   line-height: 1.35;
