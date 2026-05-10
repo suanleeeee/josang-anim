@@ -257,7 +257,8 @@ def build_recommendation(players: list) -> dict:
     no_carry = not any(p["is_carry"] for p in players)
 
     # ── 팬 타입 분석 (전체 분포 + 1위 선수 기반) ─────────────────
-    top_player = sorted_teams[0][1][1] if sorted_teams else None
+    # no_carry 시 top_player 없음 → 포수/유격수/유망주/거포 분류 생략
+    top_player = sorted_teams[0][1][1] if sorted_teams and not no_carry else None
     fan_types, fan_type_probs = _classify_fan_types(players, top_player=top_player)
     fan_type_desc = _fan_type_desc(fan_types, jersey)
 
