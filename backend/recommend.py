@@ -7,14 +7,14 @@ TEAM_VIBES: dict = {}
 
 # ── 팬 타입 설명 ──────────────────────────────────────────────────────────────
 _TYPE_DESCS = {
-    "투수콤":   "마운드 위에서 분투하는 선수들의 모습이 보입니다.",
-    "타자콤":   "공을 친 그들의 방망이가 외치는 승리의 함성이 들립니다.",
-    "내야콤":   "옷에 묻어있는 흙이 그들의 열정을 보여줍니다.",
-    "외야콤":   "가장 외로운 곳에서 가장 위험한 순간을 막는 선수들의 몸을 던지는 플레이가 보입니다.",
-    "포수콤":   "가장 낮은 곳에서 가장 무거운 책임을 가진 선수의 뒷모습이 보입니다.",
-    "유격콤":   "가장 많은 타구와 경쟁하는 흙이 묻은 유니폼의 펄럭거림이 보입니다.",
-    "얼라콤":   "어떤 새싹은 그 누구보다 굳건한 거목의 잠재력을 가지고 있습니다.",
-    "거포콤":   "그 선수의 등장으로 팬들의 마음도 경기의 흐름도 뒤바꾸는 모습이 보입니다.",
+    "투수":   "마운드 위에서 분투하는 선수들의 모습이 보입니다.",
+    "타자":   "공을 친 그들의 방망이가 외치는 승리의 함성이 들립니다.",
+    "내야수": "옷에 묻어있는 흙이 그들의 열정을 보여줍니다.",
+    "외야수": "가장 외로운 곳에서 가장 위험한 순간을 막는 선수들의 몸을 던지는 플레이가 보입니다.",
+    "포수":   "가장 낮은 곳에서 가장 무거운 책임을 가진 선수의 뒷모습이 보입니다.",
+    "유격수": "가장 많은 타구와 경쟁하는 흙이 묻은 유니폼의 펄럭거림이 보입니다.",
+    "유망주": "어떤 새싹은 그 누구보다 굳건한 거목의 잠재력을 가지고 있습니다.",
+    "거포":   "그 선수의 등장으로 팬들의 마음도 경기의 흐름도 뒤바꾸는 모습이 보입니다.",
 }
 
 
@@ -152,47 +152,47 @@ def _classify_fan_types(players: list, top_player: dict = None) -> tuple:
         out_n   = sum(1 for p in pos_data if any(k in p for k in outfield_kws))
 
         if pitch_n / n >= 0.5:
-            types.append("투수콤")
-            probs["투수콤"] = round(pitch_n / n * 100)
+            types.append("투수")
+            probs["투수"] = round(pitch_n / n * 100)
         elif (n - pitch_n) / n >= 0.5:
-            types.append("타자콤")
-            probs["타자콤"] = round((n - pitch_n) / n * 100)
+            types.append("타자")
+            probs["타자"] = round((n - pitch_n) / n * 100)
 
         if in_n >= 4 and in_n / n >= 0.35:
-            types.append("내야콤")
-            probs["내야콤"] = round(in_n / n * 100)
+            types.append("내야수")
+            probs["내야수"] = round(in_n / n * 100)
         elif out_n >= 4 and out_n / n >= 0.35:
-            types.append("외야콤")
-            probs["외야콤"] = round(out_n / n * 100)
+            types.append("외야수")
+            probs["외야수"] = round(out_n / n * 100)
 
     # ── 1위 선수 기반 ────────────────────────────────────────────
     if top_player:
         pos = top_player.get("position", "")
         if "포수" in pos:
-            types.append("포수콤")
-            probs["포수콤"] = 100
+            types.append("포수")
+            probs["포수"] = 100
         elif "유격수" in pos:
-            types.append("유격콤")
-            probs["유격콤"] = 100
+            types.append("유격수")
+            probs["유격수"] = 100
 
         age = top_player.get("age")
         if age is not None and age <= 23:
-            types.append("얼라콤")
-            probs["얼라콤"] = 100
+            types.append("유망주")
+            probs["유망주"] = 100
 
         slg = top_player.get("season_slg")
         if slg is not None:
             try:
                 if float(slg) >= 0.500:
-                    types.append("거포콤")
-                    probs["거포콤"] = 100
+                    types.append("거포")
+                    probs["거포"] = 100
             except ValueError:
                 pass
 
     return types, probs
 
 
-_BASE_TYPES = {"타자콤", "투수콤"}
+_BASE_TYPES = {"타자", "투수"}
 
 def _fan_type_desc(fan_types: list, jersey: int) -> str:
     if not fan_types:
