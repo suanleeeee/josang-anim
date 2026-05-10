@@ -386,12 +386,55 @@ def _parse_stats_table(soup: BeautifulSoup, stat_keys: "str | list[str]") -> dic
     return result
 
 
+def _fetch_stats_all_pages(url: str, stat_keys) -> dict:
+    """KBO ASP.NET 기록 페이지 전체 페이지 수집 (페이지네이션 자동 처리)."""
+    resp = _get(url)
+    if not resp:
+        return {}
+
+    soup = BeautifulSoup(resp.text, "lxml")
+    combined = _parse_stats_table(soup, stat_keys)
+
+    # 페이지네이션 링크 찾기: javascript:__doPostBack('gridId','Page$N')
+    paging_hrefs = [
+        a["href"] for a in soup.find_all("a", href=True)
+        if "Page$" in a.get("href", "")
+    ]
+    if not paging_hrefs:
+        return combined
+
+    m = re.search(r"__doPostBack\('([^']+)',\s*'Page\$\d+'", paging_hrefs[0])
+    if not m:
+        return combined
+    grid_id = m.group(1)
+
+    page_nums = set()
+    for href in paging_hrefs:
+        mn = re.search(r"Page\$(\d+)", href)
+        if mn:
+            page_nums.add(int(mn.group(1)))
+
+    vs = _extract_viewstate(soup)
+    for pn in sorted(page_nums):
+        if pn <= 1:
+            continue
+        post_data = {"__EVENTTARGET": grid_id, "__EVENTARGUMENT": f"Page${pn}", **vs}
+        r2 = _post_kbo(url, post_data, referer=url)
+        if not r2:
+            continue
+        s2 = BeautifulSoup(r2.text, "lxml")
+        combined.update(_parse_stats_table(s2, stat_keys))
+        vs = _extract_viewstate(s2)
+        time.sleep(0.5)
+        logger.info("  페이지 %d 수집 완료 (%d명)", pn, len(combined))
+
+    return combined
+
+
 def build_kbo_stats_map() -> dict:
     """
-    KBO 1군 타자(OPS)·투수(ERA) 탑 랭킹을 GET으로 수집해 통합 맵을 반환합니다.
-
-    carry 판별 기준: 타자 OPS 랭킹 등장 여부 / 투수 ERA 랭킹 등장 여부.
-    AVG 랭킹은 사용하지 않음 (승리기여도와 무관한 안타 제조기 포함 방지).
+    KBO 1군 타자(OPS)·투수(ERA) 기록을 전체 페이지 수집해 통합 맵을 반환합니다.
+    ASP.NET 페이지네이션을 자동으로 순회해 모든 등록 선수 스탯을 수집합니다.
 
     반환값:
         {
@@ -405,22 +448,12 @@ def build_kbo_stats_map() -> dict:
     hitter_url_ops = f"{KBO_BASE}/Record/Player/HitterBasic/Basic2.aspx"
     pitcher_url    = f"{KBO_BASE}/Record/Player/PitcherBasic/Basic1.aspx"
 
-    logger.info("KBO 탑 랭킹 수집 중 (타자 OPS, 투수 ERA)")
+    logger.info("KBO 전체 스탯 수집 중 (타자 OPS, 투수 ERA — 전 페이지)")
 
-    # 타자 - Basic2: OPS + SLG (carry 기준)
-    resp_ops = _get(hitter_url_ops)
-    hitter_ops_map = _parse_stats_table(
-        BeautifulSoup(resp_ops.text, "lxml"), ["ops", "slg"]
-    ) if resp_ops else {}
+    hitter_ops_map = _fetch_stats_all_pages(hitter_url_ops, ["ops", "slg"])
     time.sleep(0.5)
+    pitcher_map = _fetch_stats_all_pages(pitcher_url, "era")
 
-    # 투수 - Basic1: ERA (carry 기준)
-    resp_era = _get(pitcher_url)
-    pitcher_map = _parse_stats_table(
-        BeautifulSoup(resp_era.text, "lxml"), "era"
-    ) if resp_era else {}
-
-    # 통합: 타자
     combined = {}
     for name, info in hitter_ops_map.items():
         combined[name] = {
@@ -432,7 +465,6 @@ def build_kbo_stats_map() -> dict:
             "is_pitcher": False,
         }
 
-    # 통합: 투수
     for name, info in pitcher_map.items():
         combined[name] = {
             "player_id":  info["player_id"],
@@ -442,7 +474,7 @@ def build_kbo_stats_map() -> dict:
             "is_pitcher": True,
         }
 
-    logger.info("KBO 탑 랭킹 수집 완료: 타자 %d명 / 투수 %d명",
+    logger.info("KBO 스탯 수집 완료: 타자 %d명 / 투수 %d명",
                 len(hitter_ops_map), len(pitcher_map))
     return combined
 
