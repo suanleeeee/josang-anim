@@ -258,21 +258,50 @@ btnBackToAbout.addEventListener('click', () => {
 // ─── 이미지 저장 ─────────────────────────────────────────────
 const btnSaveImage = document.getElementById('btnSaveImage');
 btnSaveImage.addEventListener('click', async () => {
-  const shareArea = document.querySelector('.share-area');
-  shareArea.style.visibility = 'hidden';
+  btnSaveImage.disabled = true;
+  const w = window.innerWidth;
+
+  // 캡처 전용 wrapper 생성
+  const wrapper = document.createElement('div');
+  wrapper.style.cssText = `position:absolute;left:${w}px;top:0;width:${w}px;overflow:hidden;background-color:#0D1A3A;`;
+
+  // SVG 배경 클론 (fixed → absolute로 변환)
+  const bgSvg = document.getElementById('bg-result').cloneNode(true);
+  bgSvg.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;z-index:0;';
+  bgSvg.classList.remove('hidden');
+  wrapper.appendChild(bgSvg);
+
+  // 결과 콘텐츠 클론 (share-area 제거)
+  const resultClone = document.getElementById('result').cloneNode(true);
+  resultClone.style.cssText = 'position:relative;z-index:1;background:transparent;min-height:0;';
+  resultClone.classList.remove('hidden');
+  resultClone.querySelector('.share-area')?.remove();
+
+  // 경고문 추가
+  const notice = document.createElement('p');
+  notice.textContent = '실제 선수 추천·투자 등과 무관한 재미용 서비스입니다.';
+  notice.style.cssText = 'text-align:center;font-size:0.60rem;color:rgba(180,160,120,0.5);padding:10px 24px 28px;letter-spacing:0.04em;';
+  resultClone.appendChild(notice);
+
+  wrapper.appendChild(resultClone);
+  document.body.appendChild(wrapper);
+
   try {
-    const canvas = await html2canvas(document.getElementById('result'), {
+    const canvas = await html2canvas(wrapper, {
       useCORS: true,
+      allowTaint: true,
       scale: 2,
-      backgroundColor: null,
+      backgroundColor: '#0D1A3A',
     });
+    document.body.removeChild(wrapper);
     const link = document.createElement('a');
     link.download = `조상은아니고요_${resultTeamName.textContent || '결과'}.png`;
     link.href = canvas.toDataURL('image/png');
     link.click();
   } catch {
+    document.body.removeChild(wrapper);
     alert('이미지 저장에 실패했어요. 다시 시도해 주세요.');
   } finally {
-    shareArea.style.visibility = '';
+    btnSaveImage.disabled = false;
   }
 });
