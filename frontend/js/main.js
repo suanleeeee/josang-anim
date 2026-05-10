@@ -263,10 +263,15 @@ btnSaveImage.addEventListener('click', async () => {
   btnSaveImage.textContent = '저장 중...';
   btnSaveImage.disabled = true;
   try {
-    const canvas = await html2canvas(target, {
+    const canvas = await html2canvas(document.body, {
       useCORS: true,
-      backgroundColor: '#1a1008',
       scale: 2,
+      x: 0,
+      y: window.scrollY,
+      width: window.innerWidth,
+      height: window.innerHeight,
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
     });
     const link = document.createElement('a');
     link.download = `조상은아니고요_${resultTeamName.textContent || '결과'}.png`;
