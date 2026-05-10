@@ -1,6 +1,7 @@
 """
 팬 타입 분류 + 팀 순위 추천
 """
+import random
 
 # ── 팀 소개 문구 (이번 버전 미사용) ──────────────────────────────────────────
 TEAM_VIBES: dict = {}
@@ -230,7 +231,9 @@ def build_recommendation(players: list) -> dict:
         if team not in team_scores or s > team_scores[team][0]:
             team_scores[team] = (s, p)
 
-    sorted_teams = sorted(team_scores.items(), key=lambda x: x[1][0], reverse=True)
+    items = list(team_scores.items())
+    random.shuffle(items)
+    sorted_teams = sorted(items, key=lambda x: x[1][0], reverse=True)
 
     # ── 상위 3팀 빌드 ───────────────────────────────────────────
     teams = []
