@@ -116,7 +116,15 @@ function renderResult(data) {
   resultTeamName.textContent = topTeam;
 
   cardsRow.innerHTML = '';
-  (data.teams || []).forEach(t => cardsRow.appendChild(buildTeamCard(t)));
+  const teams = data.teams || [];
+  const podium = teams.length >= 3
+    ? [teams[1], teams[0], teams[2]]
+    : teams;
+  podium.forEach((t, i) => {
+    const card = buildTeamCard(t);
+    if (teams.length >= 3 && i === 1) card.classList.add('rank-1');
+    cardsRow.appendChild(card);
+  });
 
   // 팬 타입 배지 + 확률
   fanTypesBadges.innerHTML = '';
@@ -150,7 +158,7 @@ function renderResult(data) {
     : (data.fan_type_desc || '이 번호 선수들의 특성을 분석했습니다.');
 
   // 1위 팀 추천 이유 / 팁
-  fanReasonBox.classList.toggle('hidden', isGeongseongpa);
+  fanReasonBox.classList.toggle('hidden', isGeongseongpa || noCarry);
   fanTipBox.classList.toggle('hidden', !isGeongseongpa);
   fanReasonText.textContent = data.teams && data.teams[0]
     ? data.teams[0].reason

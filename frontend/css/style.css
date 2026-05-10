@@ -330,6 +330,13 @@ section {
   gap: 10px;
 }
 
+/* ─── 1위 카드 (포디움 중앙) ────────────────────────────────── */
+.team-card.rank-1 {
+  transform: translateY(-8px);
+  border-color: rgba(200, 144, 0, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
 /* ─── 팀 카드 ────────────────────────────────────────────────── */
 .team-card {
   flex: 1;
