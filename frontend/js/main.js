@@ -216,13 +216,32 @@ btnCopyLink.addEventListener('click', async () => {
 });
 
 // ─── About 모달 ──────────────────────────────────────────────
-btnAbout.addEventListener('click', () => aboutOverlay.classList.remove('hidden'));
-aboutClose.addEventListener('click', () => aboutOverlay.classList.add('hidden'));
-aboutOverlay.addEventListener('click', e => {
-  if (e.target === aboutOverlay) aboutOverlay.classList.add('hidden');
+const aboutPage1      = document.getElementById('aboutPage1');
+const aboutPage2      = document.getElementById('aboutPage2');
+const btnToReviews    = document.getElementById('btnToReviews');
+const btnBackToAbout  = document.getElementById('btnBackToAbout');
+
+function openAbout() {
+  aboutPage1.classList.remove('hidden');
+  aboutPage2.classList.add('hidden');
+  aboutOverlay.classList.remove('hidden');
+}
+function closeAbout() {
+  aboutOverlay.classList.add('hidden');
+}
+
+btnAbout.addEventListener('click', openAbout);
+aboutClose.addEventListener('click', closeAbout);
+aboutOverlay.addEventListener('click', e => { if (e.target === aboutOverlay) closeAbout(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAbout(); });
+
+btnToReviews.addEventListener('click', () => {
+  aboutPage1.classList.add('hidden');
+  aboutPage2.classList.remove('hidden');
 });
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') aboutOverlay.classList.add('hidden');
+btnBackToAbout.addEventListener('click', () => {
+  aboutPage2.classList.add('hidden');
+  aboutPage1.classList.remove('hidden');
 });
 
 // ─── 카카오 공유 ─────────────────────────────────────────────

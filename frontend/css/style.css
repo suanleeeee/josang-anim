@@ -695,6 +695,66 @@ section {
   margin-bottom: 0;
 }
 
+.about-nav-btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 0;
+  background: rgba(26, 127, 168, 0.08);
+  border: 1.5px solid rgba(26, 127, 168, 0.22);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--sky);
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.about-nav-btn:hover {
+  background: rgba(26, 127, 168, 0.14);
+}
+
+.about-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 18px;
+  transition: var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.about-back:hover {
+  color: var(--text-dark);
+}
+
+.review-item {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.review-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.review-role {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--sky);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px !important;
+}
+
 /* ─── Loading ────────────────────────────────────────────────── */
 .loading-overlay {
   position: fixed;

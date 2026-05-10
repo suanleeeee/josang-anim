@@ -583,11 +583,27 @@
     <div class="about-overlay hidden" id="aboutOverlay">
       <div class="about-modal">
         <button class="about-close" id="aboutClose" type="button" aria-label="닫기">✕</button>
-        <p class="about-label">about</p>
-        <h3 class="about-title">조상은 아니고요...</h3>
-        <div class="about-body" id="aboutBody">
-          <!-- 내용 추후 업로드 -->
+
+        <!-- 페이지 1: 기획의도 -->
+        <div class="about-page" id="aboutPage1">
+          <p class="about-label">about</p>
+          <h3 class="about-title">조상은 아니고요...</h3>
+          <div class="about-body" id="aboutBodyMain">
+            <!-- 기획의도 내용 추후 업로드 -->
+          </div>
+          <button class="about-nav-btn" id="btnToReviews" type="button">팀원 후기 보기 →</button>
         </div>
+
+        <!-- 페이지 2: 팀원 후기 -->
+        <div class="about-page hidden" id="aboutPage2">
+          <button class="about-back" id="btnBackToAbout" type="button">← 뒤로</button>
+          <p class="about-label">team</p>
+          <h3 class="about-title">우린 조상은 아니고요...</h3>
+          <div class="about-body" id="aboutBodyReviews">
+            <!-- 팀원 후기 추후 업로드 -->
+          </div>
+        </div>
+
       </div>
     </div>
 
