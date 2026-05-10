@@ -942,7 +942,7 @@ section {
 }
 
 .sc-inner {
-  padding: 52px 28px 20px;
+  padding: 12px 28px 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
