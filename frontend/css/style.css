@@ -695,25 +695,23 @@ section {
   margin-bottom: 0;
 }
 
-.about-nav-btn {
+.about-easter-link {
   display: block;
-  width: 100%;
-  margin-top: 20px;
-  padding: 12px 0;
-  background: rgba(26, 127, 168, 0.08);
-  border: 1.5px solid rgba(26, 127, 168, 0.22);
-  border-radius: 12px;
+  margin-top: 24px;
+  background: none;
+  border: none;
   font-family: inherit;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--sky);
+  font-size: 0.68rem;
+  color: rgba(122, 92, 46, 0.32);
   cursor: pointer;
-  transition: var(--transition);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.06em;
+  transition: color 0.3s;
+  text-align: left;
+  padding: 0;
 }
 
-.about-nav-btn:hover {
-  background: rgba(26, 127, 168, 0.14);
+.about-easter-link:hover {
+  color: rgba(122, 92, 46, 0.60);
 }
 
 .about-back {
@@ -753,6 +751,20 @@ section {
   color: var(--sky);
   letter-spacing: 0.08em;
   margin-bottom: 6px !important;
+}
+
+.review-connect {
+  padding-top: 18px;
+  margin-top: 4px;
+}
+
+.review-connect a {
+  color: var(--sky);
+  text-decoration: none;
+}
+
+.review-connect a:hover {
+  text-decoration: underline;
 }
 
 /* ─── Loading ────────────────────────────────────────────────── */
